@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/che3dmodeler/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yuliia-karas-a873511b4/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.artstation.com/yulyan4i4ek" target="_blank" aria-label="ArtStation">
+        <i class="fa-brands fa-artstation"></i>
+      </a>
+      <a href="https://t.me/che3dmodeler" target="_blank" aria-label="Telegram">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+
+      <!--<a href="https://www.behance.net/yourprofile" target="_blank" aria-label="Behance">
+        <i class="fab fa-behance"></i>
+      </a>-->
+    </div>
+    {% assign t = site.data.us_ua[page.lang] %}
+    <p>{{ t.footer.copyright }}</p>
+    <p class="created-by">{{ t.footer.created }}</p>
+  </div>
+</footer>
+

@@ -1,0 +1,273 @@
+- name: magicstaff
+  category_id: gameassets
+  category: gameassets
+  title_category: "Game Assets"
+  description_category: "Explore a variety of stylized and realistic game assets for your 3D projects."
+  title_category_ua: "Ігрові активи"
+  description_category_ua: "Досліджуйте різноманітні стилізовані та реалістичні ігрові ассети для 3D проєктів."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+  en:
+    title: "Magic Staff"
+    description: "Stylized game asset with hand-painted textures."
+    description_img: 
+      - "Here will be your text about img 1"
+      - "Here will be your text about img 2"
+    tags: ["Game Asset", "Stylized", "Fantasy"]
+    alt:
+      - "Magic staff front view"
+      - "Magic staff wireframe"
+  ua:
+    title: "Магічний посох"
+    description: "Стилізований ігровий ассет з ручною текстурою."
+    description_img: 
+      - "Тут буде текст стосовно картинки 1"
+      - "Тут буде текст стосовно картинки 2"
+    tags: ["Ігровий обєкт", "Стилізація", "Фентезі"]
+    alt:
+      - "Магічний посох спереду"
+      - "Магічний посох у wireframe"
+
+- name: barstools
+  category_id: products
+  category: products
+  title_category: "Products Visualization"
+  description_category: "High-quality 3D visuals that make your products stand out."
+  title_category_ua: "Візуалізація продуктів"
+  description_category_ua: "Якісні 3D-візуалізації, що виділяють ваші продукти."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+  en:
+    title: "Bar stools"
+    description: "Realistic Chair for 3D Warehouse"
+    description_img: 
+      - "Here will be your text about img 1"
+      - "Here will be your text about img 2"
+    tags: ["Architectural Visualization", "Realism", "PBR Texture", "Bar Stool"]
+    alt:
+      - "Bar Stool 3d view"
+      - "PBR texture of bar stool"
+  ua:
+    title: "Барні стільці"
+    description: "Реалістичний стілець для 3D приміщень"
+    description_img: 
+      - "Тут буде текст стосовно картинки 1"
+      - "Тут буде текст стосовно картинки 2"
+    tags: ["Архвіз", "Реалізм", "PBR текстура", "Барний стілець"]
+    alt:
+      - "Барний стілець - 3д вид"
+      - "PBR текстура барного стільця"
+
+- name: pillow
+  category_id: products
+  category: products
+  title_category: "Products Visualization"
+  description_category: "High-quality 3D visuals that make your products stand out."
+  title_category_ua: "Візуалізація продуктів"
+  description_category_ua: "Якісні 3D-візуалізації, що виділяють ваші продукти."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+    - title-img_1_2.jpg
+  en:
+    title: "Pillow 3D model"
+    description: "High poly Realistic Pillow for your marketplace"
+    description_img: 
+      - "HP Pillow 3D Model without Unwrapping and Textures"
+      - "Realistic Render of Pillow 3D Model for your marketplace"
+      - "HighPoly 3D Model for your marketplace"
+    tags: ["Realism", "Pillow", "3D model", "HighPoly Pillow 3d model", "HP"]
+    alt:
+      - "Pillow 3d view"
+      - "Pillows realistic render"
+      - "HP Pillow 3d model"
+  ua:
+    title: "Подушка 3д модель"
+    description: "Високополігональна реалістична подушка для вашого онлайн магазину"
+    description_img: 
+      - "Високополігональна 3д модель подушки без UV-розгортки і текстур"
+      - "Реалістичний рендер 3д моделі подушок для онлайн магазину"
+      - "Високополігональна 3д модель для інтернет магазину"
+    tags: ["Реалізм", "Подушка", "3д модель", "Високополігональна 3д модель"]
+    alt:
+      - "Подушка - 3д вигляд"
+      - "Реалістичний рендер 3д подушки"
+      - "Високополігональна 3д модель подушки"
+
+- name: door
+  category_id: pbrtextures
+  category: pbrtextures
+  title_category: "3D Models with PBR Textures"
+  description_category: "Created detailed 3D models with physically based rendering (PBR) textures."
+  title_category_ua: "3D Моделі з PBR Текстурами"
+  description_category_ua: "Створювала деталізовані 3D-моделі з текстурами фізично коректного рендерингу (PBR)."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+    - title-img_1_2.jpg
+    - title-img_1_3.jpg
+    - title-img_1_4.jpg
+    - title-img_1_5.jpg
+    - title-img_1_6.jpg
+  en:
+    title: "Door 3D model with PBR textures"
+    description: "Realistic 3D door model with detailed PBR textures, perfect for visualizations and marketplaces."
+    description_img: 
+      - "Realistic 3D render of a door with PBR textures, close-up camera view, showing part of the object and a sunset visible through the window."
+      - "Close-up 3D render of a Hafele metal hinge with detailed PBR textures."
+      - "Close-up 3D render of a Hafele door handle with realistic PBR textures."
+      - "Detailed 3D render of a door frame made of wood with American cherry texture, close-up view."
+      - "3D render of a door exhibition in evening light with realistic PBR materials."
+      - "2D technical view of doors showing all angles, dimensions, materials, and details with Photoshop post-processing."
+    tags: ["3D door models", "PBR textures", "Hafele hardware", "3D door handle render", "realistic 3D doors", "door hinge 3D render", "American cherry wood texture", "door exhibition 3D visualization", "technical 2D door drawings"]
+    alt:
+      - "Realistic 3D render of a door with PBR textures, close-up camera view, showing part of the object and a sunset visible through the window."
+      - "Close-up 3D render of a Hafele metal hinge with detailed PBR textures."
+      - "Close-up 3D render of a Hafele door handle with realistic PBR textures."
+      - "Detailed 3D render of a door frame made of wood with American cherry texture, close-up view."
+      - "3D render of a door exhibition in evening light with realistic PBR materials."
+      - "2D technical view of doors showing all angles, dimensions, materials, and details with Photoshop post-processing."
+  ua:
+    title: "3д модель реалістичних дверей з PBR текстурами"
+    description: "Реалістична 3D-модель дверей з детальними PBR-текстурами, ідеально підходить для візуалізацій та торгових майданчиків."
+    description_img: 
+      - "Реалістичний 3D-рендер дверей з PBR-текстурами, крупний план, показана частина об’єкта і захід сонця у вікні." 
+      - "Крупний 3D-рендер металевої завіси Hafele з деталізованими PBR-текстурами." 
+      - "Крупний 3D-рендер дверної ручки Hafele з реалістичними PBR-текстурами."
+      - "Детальний 3D-рендер дверної коробки з дерева з текстурою американської вишні, крупний план." 
+      - "3D-рендер виставки дверей при вечірньому освітленні з реалістичними PBR-матеріалами."
+      - "2D-технічний вигляд дверей з усіма ракурсами, розмірами, матеріалами і деталями з постобробкою у Photoshop."
+    tags: ["3D моделі дверей" , "PBR текстури", "фурнітура Hafele", "3D рендер дверної ручки", "реалістичні 3D двері", "3D рендер дверної завіси", "текстура американської вишні дерево", "3D візуалізація виставки дверей", "технічні 2D креслення дверей" ]
+    alt:
+      - "Реалістичний 3D-рендер дверей з PBR-текстурами, крупний план, показана частина об’єкта і захід сонця у вікні." 
+      - "Крупний 3D-рендер металевої завіси Hafele з деталізованими PBR-текстурами." 
+      - "Крупний 3D-рендер дверної ручки Hafele з реалістичними PBR-текстурами."
+      - "Детальний 3D-рендер дверної коробки з дерева з текстурою американської вишні, крупний план." 
+      - "3D-рендер виставки дверей при вечірньому освітленні з реалістичними PBR-матеріалами."
+      - "2D-технічний вигляд дверей з усіма ракурсами, розмірами, матеріалами і деталями з постобробкою у Photoshop."
+
+- name: bitcoin
+  video1: "L9MUKT0_lNs"
+  category_id: nft
+  category: nft
+  title_category: "NFT / Stylized Art"
+  description_category: "Unique 3D stylized artworks and NFT-ready visuals with strong artistic identity."
+  title_category_ua: "NFT / Стилізоване мистецтво"
+  description_category_ua: "Унікальні 3D-стилізовані роботи та візуалізації для NFT із виразним художнім стилем."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+    - title-img_1_2.jpg
+    - title-img_1_3.jpg
+  en:
+    title: "Bitcoin 3D Model"
+    description: "High-poly realistic 3D model of Bitcoin with detailed PBR textures (basecolor, metalness, height, normal, roughness) for visualizations and marketplaces."
+    description_img: 
+      - "3D Bitcoin model close-up view with detailed gold texture"
+      - "High-poly 3D Bitcoin model with basecolor and metalness maps applied"
+      - "Close-up render showing Bitcoin 3D model with height and normal maps for fine details"
+      - "Bitcoin 3D model with full PBR workflow: basecolor, roughness, metalness and normal maps"
+    tags: ["Bitcoin", "3D model", "High-poly", "PBR workflow", "basecolor metalness normal roughness", "realistic 3D Bitcoin"]
+    alt:
+      - "3D Bitcoin model close-up view with detailed gold texture"
+      - "3D Bitcoin model close-up with basecolor and metalness maps"
+      - "Realistic render using height and normal maps for extra detail"
+      - "High-poly Bitcoin 3D model with full PBR textures"
+  ua:
+    title: "3D Модель Біткоїна"
+    description: "Високополігональна реалістична 3D-модель Біткоїна з детальними PBR-текстурами (basecolor, metalness, height, normal, roughness), ідеальна для візуалізацій та маркетплейсів."
+    description_img: 
+      - "Крупний план 3D-моделі Біткоїна з деталізованою золотою текстурою"
+      - "Високополігональна 3D-модель Біткоїна з картами basecolor і metalness"
+      - "Крупний рендер з використанням карт height і normal для деталей"
+      - "3D-модель Біткоїна з повним PBR-набором: basecolor, roughness, metalness і normal карти"
+    tags: ["Біткоїн", "3D модель", "високополігональна", "PBR workflow", "basecolor metalness normal roughness", "реалістична 3D модель Біткоїна"]
+    alt:
+      - "Крупний план 3D-моделі Біткоїна з деталізованою золотою текстурою"
+      - "3D-модель Біткоїна крупним планом з картами basecolor і metalness"
+      - "Реалістичний рендер із застосуванням карт height і normal"
+      - "Високополігональна 3D-модель Біткоїна з повним набором PBR-текстур"
+
+- name: tire
+  category_id: arvr
+  category: arvr
+  title_category: "AR/VR Visualization"
+  description_category: "High-quality AR/VR-ready 3D models that enhance immersive experiences."
+  title_category_ua: "Візуалізація AR/VR"
+  description_category_ua: "Якісні 3D-моделі для AR/VR, що створюють реалістичний досвід."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+    - title-img_1_2.jpg
+    - title-img_1_3.jpg
+  en:
+    title: "Realistic Tire"
+    description: "High-poly Realistic Tire 3D model with PBR textures (Basecolor, Metalness, Height, Normal, Roughness). Perfect for automotive visualizations, product renders, games, AR/VR, and marketplaces."
+    description_img: 
+      - "Detailed 3D tire model with clean topology and realistic shading"
+      - "High-poly tire render for automotive product visualization"
+      - "PBR-ready tire 3D model suitable for games and commercial projects"
+      - "Close-up render of Realistic Tire with all texture maps applied"
+    tags: ["Realism", "Tire", "3D model", "PBR textures", "Automotive", "High poly"]
+    alt:
+      - "Realistic Tire 3D model render"
+      - "Automotive tire with PBR textures"
+      - "High-poly 3D tire for product visualization"
+      - "Detailed tire 3D asset with clean topology"
+  ua:
+    title: "Реалістична шина"
+    description: "Високополігональна 3D модель реалістичної шини з PBR-текстурами (Basecolor, Metalness, Height, Normal, Roughness). Ідеально підходить для автомобільних візуалізацій, рендерів продуктів, ігор, AR/VR та онлайн-магазинів."
+    description_img: 
+      - "Деталізована 3D модель шини з чистою топологією та реалістичним шейдингом"
+      - "Високополігональний рендер шини для візуалізації автомобільних продуктів"
+      - "3D модель шини з PBR-текстурами для ігор та комерційних проєктів"
+      - "Крупний план реалістичної шини з усіма картами текстур"
+    tags: ["Реалізм", "Шина", "3D модель", "PBR текстури", "Автомобіль", "Високополігональна"]
+    alt:
+      - "Реалістична 3D модель шини"
+      - "Автомобільна шина з PBR-текстурами"
+      - "Високополігональна 3D шина для візуалізації продуктів"
+      - "Деталізована 3D модель шини з чистою топологією"
+
+- name: podsystem
+  video: "kAubr2pJm2c"
+  category_id: cgi
+  category: cgi
+  title_category: "CGI / Motion Design"
+  description_category: "Photorealistic and stylized 3D assets for animations, commercials, and motion design visuals."
+  title_category_ua: "CGI / Моушн-дизайн"
+  description_category_ua: "Фотореалістичні та стилізовані 3D-моделі для анімацій, рекламних роликів та моушн-графіки."
+  images:
+    - title-img_1_0.jpg
+    - title-img_1_1.jpg
+    - title-img_1_2.jpg
+  en:
+    title: "POD System 3D Model"
+    description: "High-quality 3D model of a modern POD vape system with clean topology. Perfect for product commercials, motion design, CGI animations, and advertising renders."
+    description_img: 
+      - "Photorealistic 3D model of a vape POD system with sleek design"
+      - "Motion-ready vape device model with full PBR texture set"
+      - "Stylized render of POD system for CGI or marketing visuals"
+      - "Detailed close-up of the POD system for animated product ads"
+    tags: ["POD system", "Vape", "3D model", "Product design", "Motion design", "CGI"]
+    alt:
+      - "3D model of vape POD system for CGI animation"
+      - "Modern electronic cigarette device for product visualization"
+      - "Stylized CGI vape system for commercials"
+      - "Photorealistic POD vape render with clean topology"
+  ua:
+    title: "3D модель POD-системи"
+    description: "Якісна 3D-модель сучасної POD-системи для вейпу з чистою топологією. Ідеально підходить для рекламної графіки, анімацій, CGI та моушн-дизайну."
+    description_img: 
+      - "Фотореалістична 3D-модель POD-системи з елегантним дизайном"
+      - "Модель вейп-пристрою з повним набором PBR-текстур для CGI"
+      - "Стилізований рендер POD-системи для маркетингових відео"
+      - "Деталізований крупний план POD-системи для анімованої реклами"
+    tags: ["POD-система", "Вейп", "3D модель", "Дизайн продукту", "Моушн-дизайн", "CGI"]
+    alt:
+      - "3D модель POD-системи для CGI-анімації"
+      - "Сучасний вейп-пристрій для візуалізації продукту"
+      - "CGI-рекламна модель POD-системи"
+      - "Фотореалістична POD-система з чистою топологією"

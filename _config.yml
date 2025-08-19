@@ -1,0 +1,46 @@
+title: "YK Portfolio"
+url: "https://yulyan4i4ek.github.io"
+baseurl: "/ykportfolio" # якщо сайт у корені репозиторію; якщо в папці — вкажи /назва-репозиторію
+
+plugins:
+  - jekyll-datapage-generator
+  - jekyll-sitemap
+
+datapage_gen:
+  - data: projects
+    template: project
+    name: name
+    dir: "gallery"
+    extension: "html"
+    lang: en
+
+  - data: projects
+    template: project
+    name: name
+    dir: "ua/gallery"
+    extension: "html"
+    lang: ua
+
+require:
+  - base64
+  - csv
+
+sass:
+  sass_dir: assets/css
+
+permalink: pretty
+
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .sass-cache
+  - .jekyll-cache
+  - Rakefile
+  - .DS_Store
+  - .bundle
+  - README.md
+  - package.json
+  - package-lock.json

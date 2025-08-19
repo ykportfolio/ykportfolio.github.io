@@ -1,0 +1,26 @@
+<nav>
+  <div class="burger">
+    <img src="/assets/img/burger.svg" alt="Menu" />
+  </div>
+
+  <ul class="nav-links">
+    <li>
+      <a href="{% if page.lang == 'en'%}/about/{% else %}/ua/about/{% endif %}" class="{% if page.url == '/about/' or page.url == '/ua/about/' %}active{% endif %}">{{ t.nav.about }}</a>
+    </li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="{% if page.url == '/gallery/' or page.url == '/ua/gallery/' %}active{% endif %}">{{ t.nav.gallery }}</a>
+    </li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="{% if page.url == '/contact/' or page.url == '/ua/contact/' %}active{% endif %}">{{ t.nav.contact }}</a>
+    </li>
+
+    <li class="nav-item lang-switch">
+      {% if page.lang == "ua" %}
+        {% assign switch_url = page.url | remove_first: "/ua" %}
+        <a href="{{ switch_url }}" class="btn-lang">EN</a>
+      {% else %}
+        <a href="/ua{{ page.url }}" class="btn-lang">UA</a>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

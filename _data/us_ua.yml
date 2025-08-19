@@ -1,0 +1,125 @@
+ua:
+  lang: "ua"
+  title: "Юлія Карась | Портфоліо 3D-художниці"
+  description: "Ознайомтеся з цифровими 3D-дизайнами Юлії Карась. Портфоліо уяви, інновацій та візуального сторітелінгу."
+  view_gallery: "Переглянути галерею"
+  back_mainpage: "Повернутись на головну"
+  contacts: "Зв'язатися зі мною"
+  nav:
+    about: "Про мене"
+    gallery: "Галерея"
+    contact: "Контакти"
+    language: "EN"
+  hero:
+    title: "Ласкаво прошу у мій 3D світ"
+    subtitle: "Досліджуй мою колекцію 3D робіт. Пориньте у світ, де уява зустрічається з реальністю."
+  footer: 
+    copyright: "© 2025 3D художниця Юлія Карась. Всі права захищено."
+    created: "Сайт створено Юлією Карась"
+  gallery:
+    gameassets: "Ігрові активи"
+    product: "Візуалізація продуктів"
+    archviz: "Архітектурна візуалізація"
+    nft: "NFT / Стилізоване мистецтво"
+    arvr: "AR / VR (доповнена та віртуальна реальність)"
+    cgi: "CGI / Моушн-дизайн"
+    textures: "Моделі з PBR текстурами"
+  aboutme:
+    title: "Про мене"
+    subtitle1: "Де технології зустрічають бачення"
+    text1: "Привіт! Я Юлія Карась — 3D-художниця, яка бачить у цифровому мистецтві не просто навичку, а спосіб надихати, будувати і зцілювати."
+    subtitle2: "Майбутнє в Revit і не тільки"
+    text2: "Моєю ціллю є освоєння Revit — потужного інструмента архітектурного моделювання. Я бачу в ньому майбутнє цифрових двійників, легкої реконструкції та гуманного дизайну."
+    subtitle3: "CGI з серцем"
+    text3: "Я мрію створювати CGI мультфільми, які зворушують і очі, і душу — історії, що навчають дітей доброті в світі, де стільки болю й війни. Я поєдную творчість і професійність, шукаючи замовників, що так само цінують 3D як мистецтво."
+    quote: "Створюй мистецтво, що торкає майбутнє — і серця прийдуть самі."
+  contact:
+    first-name: "Ім'я:"
+    last-name: "Прізвище:"
+    placeholder-name: "Леся"
+    placeholder-surname: "Українка"
+    email: "Емейл:"
+    message: "Повідомлення:"
+    send: "Відправити повідомлення"
+    title: "Зв'язатися зі мною"
+    subtitle: "Маєш запитання чи пропозицію? Заповни форму нижче — я з радістю відповім."
+  seo:
+    about:
+      title: "Про мене – Юлія Карась | 3D Художниця та Візуалізатор"
+      description: "Дізнайтесь більше про Юлію Карась – 3D художницю, яка поєднує архітектурне моделювання з творчими CGI-проєктами. Відповідальна, надійна, відкрита до співпраці."
+    contact:
+      title: "Контакти – Зв'язок із Юлією Карась | 3D Портфоліо"
+      description: "Бажаєте співпрацювати або поставити запитання? Звʼяжіться з Юлією Карась через форму або соціальні мережі."
+    gallery:
+      title: "Галерея – Юлія Карась | 3D Моделі та Візуальні Проєкти"
+      description: "Перегляньте галерею 3D моделей Юлії Карась: реалістичні об'єкти, стилізовані ассети, архітектурні сцени та креативні концепції."
+    thank:
+      title: "Дякую – Портфоліо Юлії Карась"
+      description: "Дякую за звернення! Я відповім Вам якнайшвидше. Створімо щось круте разом!"
+    error:
+      title: "404 – Сторінку не знайдено | Портфоліо Юлії Карась"
+      description: "Ой! Сторінку не знайдено. Поверніться на головну або перегляньте роботи Юлії Карась."
+  
+
+
+en:
+  lang: "en"
+  title: "Yuliia Karas | 3D Artist Portfolio"
+  description: "Explore digital 3D designs by Yuliia Karas. A portfolio of imagination, innovation and visual storytelling."
+  view_gallery: "View Gallery"
+  back_mainpage: "Back mainpage"
+  contacts: "Contact me"
+  nav:
+    about: "About"
+    gallery: "Gallery"
+    contact: "Contact"
+    language: "UA"
+  hero:
+    title: "Welcome to my 3D world"
+    subtitle: "Explore my collection of 3D artwork. Dive into a world where imagination meets reality."
+  footer: 
+    copyright: "© 2025 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
+    created: "Created by Yliia Karas"
+  gallery:
+    gameassets: "Game Assets"
+    product: "Product Visualization"
+    archviz: "Archviz"
+    nft: "NFT / Stylized Art"
+    arvr: "AR / VR"
+    cgi: "CGI / Motion"
+    textures: "Models with PBR Textures"
+  aboutme:
+    title: "About Me"
+    subtitle1: "Where Technology Meets Vision"
+    text1: "Hi, I'm Yuliia Karas — a 3D artist who sees digital art not just as a skill, but as a way to inspire, to build, and to heal."
+    subtitle2: "A Future in Revit and Beyond"
+    text2: "One of my long-term goals is to master Revit — a powerful tool for architectural modeling. I believe in its potential to enable digital twins, simplify reconstruction, and make smart, human-centered design a reality."
+    subtitle3: "CGI with Heart"
+    text3: "I dream of creating CGI animations that speak to both the eye and the soul — stories that teach children kindness in a world too full of cruelty, pain, and war. I balance professionalism with creativity and strive to collaborate with clients who value 3D as a true craft."
+    quote: "Create art that touches the future, and hearts will follow."
+  contact:
+    first-name: "Name:"
+    last-name: "Surname:"
+    placeholder-name: "Joe"
+    placeholder-surname: "Doe"
+    email: "Email:"
+    message: "Message:"
+    send: "Send message"
+    title: "Get in Touch"
+    subtitle: "Have a question or proposal? Fill out the form below and I'll get back to you soon."
+  seo:
+    about:
+      title: "About – Yuliia Karas | 3D Artist & Visual Creator"
+      description: "Learn more about Yuliia Karas – a 3D artist combining architecture and creative CGI projects. Dedicated, reliable, and open to collaboration."
+    contact:
+      title: "Contact – Reach Out to Yuliia Karas | 3D Portfolio"
+      description: "Want to work together or ask a question? Get in touch with Yuliia Karas through the contact form or social media."
+    gallery:
+      title: "Gallery – Yuliia Karas | 3D Models & Visual Projects"
+      description: "Explore Yuliia Karas' 3D modeling gallery: realistic objects, stylized assets, architectural scenes, and creative concepts."
+    thank:
+      title: "Thank You – Yuliia Karas Portfolio"
+      description: "Thanks for reaching out! I will respond as soon as possible. Let's build something amazing together!"
+    error:
+      title: "404 – Page Not Found | Yuliia Karas Portfolio"
+      description: "Oops! The page you're looking for doesn't exist. Go back to the homepage or explore Yuliia Karas' 3D works."

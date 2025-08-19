@@ -1,0 +1,36 @@
+# 🔧 Jekyll build folders
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# 💎 Ruby/Bundler
+.bundle/
+vendor/
+Gemfile.lock
+
+# 📁 System files (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# 🧠 IDE/Editor folders
+.vscode/
+.idea/
+
+# 📦 Node.js (якщо використовуватимеш npm для скриптів або tailwind і т.д.)
+node_modules/
+
+# 🧪 Logs
+*.log
+
+# 🧪 Temp / cache
+*.tmp
+*.swp
+
+# 🔐 Private/Secrets
+.env
+
+# 🖼️ Optional: якщо зберігаєш великі сирі рендери чи резервні файли — додай свої формати
+*.blend1
+*.bak
+*.old

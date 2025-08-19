@@ -1,0 +1,64 @@
+{% assign t = site.data.us_ua[page.lang] %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-9U2DVa5n+GJg7Ecfk4GpDyZQd+aUVmJRxBdBnAgz1Wy4thYa51X9A2IehES+2+ZJzRO1WQbiCCVtcVD9pH3kEA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+    <title>
+    {% case page.slug %}
+      {% when "about" %}{{ t.seo.about.title }}
+      {% when "gallery" %}{{ t.seo.gallery.title }}
+      {% when "contact" %}{{ t.seo.contact.title }}
+      {% else %}{{ t.title }}
+    {% endcase %}
+  </title>
+    <meta name="description" content="{% case page.slug %}
+    {% when 'about' %}{{ t.seo.about.description }}
+    {% when 'gallery' %}{{ t.seo.gallery.description }}
+    {% when 'contact' %}{{ t.seo.contact.description }}
+    {% else %}{{ t.description }}
+  {% endcase %}">
+    {% assign t = site.data.us_ua[page.lang] %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+  <title>
+    {% case page.slug %}
+      {% when "about" %}{{ t.seo.about.title }}
+      {% when "gallery" %}{{ t.seo.gallery.title }}
+      {% when "contact" %}{{ t.seo.contact.title }}
+      {% else %}{{ t.title }}
+    {% endcase %}
+  </title>
+  <meta name="description" content="{% case page.slug %}
+    {% when 'about' %}{{ t.seo.about.description }}
+    {% when 'gallery' %}{{ t.seo.gallery.description }}
+    {% when 'contact' %}{{ t.seo.contact.description }}
+    {% else %}{{ t.description }}
+  {% endcase %}">
+  
+  {% if page.lang == "ua" %}
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/ua' }}" />
+  {% elsif page.lang == "en" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}/ua{{ page.url }}" />
+  {% endif %}
+ 
+  {% if page.url == "/" and page.lang == "en" %}
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}/ua/" />
+  {% elsif page.url == "/ua/" and page.lang == "ua" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/" />
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</head>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </head>

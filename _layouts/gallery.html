@@ -1,0 +1,42 @@
+{% assign t = site.data.us_ua[page.lang] %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="gallery-page">
+    <div class="gallery-blocks">
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/gameassets/{% else %}/gallery/gameassets/{% endif %}">
+        <img src="/assets/img/gallery/gameassets/magicstaff/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.gameassets }}" />
+        <h2>{{ t.gallery.gameassets }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/products/{% else %}/gallery/products/{% endif %}">
+        <img src="/assets/img/gallery/products/barstools/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.product }}" />
+        <h2>{{ t.gallery.product }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/pbrtextures/{% else %}/gallery/pbrtextures/{% endif %}">
+        <img src="/assets/img/gallery/pbrtextures/door/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.textures }}" />
+        <h2>{{ t.gallery.textures }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/nft/{% else %}/gallery/nft/{% endif %}">
+        <img src="/assets/img/gallery/nft/bitcoin/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.nft }}" />
+        <h2>{{ t.gallery.nft }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/3dprinting/{% else %}/gallery/3dprinting/{% endif %}">
+        <img src="/assets/img/gallery/3dprinting/planter/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.threed }}" />
+        <h2>{{ t.gallery.threed }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/arvr/{% else %}/gallery/arvr/{% endif %}">
+        <img src="/assets/img/gallery/arvr/tire/thumbnails/title-img_1_0.jpg" alt="{{ t.gallery.arvr }}" />
+        <h2>{{ t.gallery.arvr }}</h2>
+      </a>
+      <a class="gallery-block" href="{% if page.lang == 'ua' %}/ua/gallery/cgi/{% else %}/gallery/cgi/{% endif %}">
+        <img src="/assets/img/gallery/cgi/podsystem/thumbnails/title-img_1_0.jpg"{{ t.gallery.cgi }}" />
+        <h2>{{ t.gallery.cgi }}</h2>
+      </a>
+    </div>
+  </div>
+  {% include footer.html %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" integrity="sha512-Q43KKnW39yLyIflzzTWK58rCIYrBUNh1eav7Xnd0PbL+vqZxELNHIEAVOoAy1Kz9zwawX6ZjrsxGfBgslh3EUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

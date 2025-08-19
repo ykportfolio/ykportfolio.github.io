@@ -1,0 +1,42 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign category = page.category_id %}
+{% assign projects = site.data.projects | where: "category", category %}
+{% assign first_project = projects | first %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {% include head.html %}
+  <title>{{ category | capitalize }}</title>
+  <meta name="description" content="{{ category }} category">
+</head>
+<body>
+  {% include header.html %}
+  <main class="category-page">
+    <div class="category-overlay">
+      {% if lang == "ua" %}
+        <h1>{{ first_project.title_category_ua }}</h1>
+        <p class="description">{{ first_project.description_category_ua }}</p>
+      {% else %}
+        <h1>{{ first_project.title_category }}</h1>
+        <p class="description">{{ first_project.description_category }}</p>
+      {% endif %}
+
+      <div class="image-gallery">
+        {% for project in projects %}
+          {% assign content = project[lang] %}
+          <a href="{% if lang == 'ua' %}/ua/gallery/{{ project.category_id }}/{{ project.name }}/{% else %}/gallery/{{ project.category_id }}/{{ project.name }}/{% endif %}">
+            <img src="/assets/img/gallery/{{ project.category_id }}/{{ project.name }}/middle/{{ project.images[0] }}" alt="{{ content.alt[0] }}">
+            <p class="description">{{ content.title }}</p>
+          </a>
+        {% endfor %}
+      </div>
+
+      <a href="{% if lang == 'ua' %}/ua/gallery/{% else %}/gallery/{% endif %}" class="btn-back">
+        ← {% if lang == 'ua' %}Назад до галереї{% else %}Back to Gallery{% endif %}
+      </a>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

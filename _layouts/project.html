@@ -1,0 +1,54 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign project = site.data.projects | where: "name", page.project_id | first %}
+{% assign content = project[lang] %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {% include head.html %}
+  <title>{{ content.title }}</title>
+  <meta name="description" content="{{ content.description }}">
+</head>
+<body>
+  {% include header.html %}
+  <div class="project-page">
+    <div class="project-overlay">
+      <h1>{{ content.title }}</h1>
+      <p class="description">{{ content.description }}</p>
+
+      <div class="tags">
+        {% for tag in content.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="image-gallery">
+        {% for image in project.images %}
+          <div class="gallery-item">
+            <img src="/assets/img/gallery/{{ project.category_id }}/{{ project.name }}/full/{{ image }}" alt="{{ content.alt[forloop.index0] }}">
+            <p class="description">{{ content.description_img[forloop.index0] }}</p>
+          </div>
+        {% endfor %}
+
+        {% if project.video %}
+          <div class="shorts-container">
+            <iframe src="https://www.youtube.com/embed/{{ project.video }}" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+
+        {% if project.video1 %}
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/{{ project.video1 }}" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+      </div>
+
+      <a href="{% if lang == 'ua' %}/ua/gallery/{% else %}/gallery/{% endif %}" class="btn-back">
+        {% if lang == 'ua' %}← ← Назад до галереї{% else %}← ← Back to Gallery{% endif %}</a>
+      <a href="{% if lang == 'ua' %}/ua/gallery/{{ project.category_id }}{% else %}/gallery/{{ project.category_id }}{% endif %}" class="btn-back">
+        {% if lang == 'ua' %}← Назад до категорії{% else %}← Back to Category{% endif %}</a>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+</html>

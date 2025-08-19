@@ -1,0 +1,33 @@
+{% assign t = site.data.us_ua[page.lang] %}
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body>
+    
+  {% include header.html %}
+
+  <div class="contact-page">
+    <div class="container">
+      <h1>{{ t.contact.title }}</h1>
+      <p>{{ t.contact.subtitle }}</p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:3d.visualization.yuliia@proton.me">yuliia@example.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yuliia-karas-a873511b4/" target="_blank">Yuliia Karas</a></p>
+          <p><strong>ArtStation:</strong> <a href="https://www.artstation.com/yulyan4i4ek" target="_blank">artstation.com/yulyan4i4ek</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/che3dmodeler/" target="_blank">instagram.com/che3dmodeler</a></p>
+          <p><strong>Telegram:</strong> <a href="https://t.me/che3dmodeler" target="_blank">@che3dmodeler</a></p>
+          <!--<p><strong>Behance:</strong> <a href="https://www.behance.net/" target="_blank">behance.net/yourprofile</a></p>-->
+        </div>
+
+       {% include form.html %}
+    
+    </div>
+  </div>
+      
+  {% include footer.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" integrity="sha512-Q43KKnW39yLyIflzzTWK58rCIYrBUNh1eav7Xnd0PbL+vqZxELNHIEAVOoAy1Kz9zwawX6ZjrsxGfBgslh3EUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </body>
+</html>

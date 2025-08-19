@@ -1,0 +1,1089 @@
+---
+---
+
+@use 'sass:color';
+
+$color: #1e1e1e;
+$bg-color: #1e1e1e;
+$section-color: #2e2e2e;
+$text-color: #f5f5f5;
+$accent-color: #5eead4;
+$highlight-color: #d1b36d;
+
+// ----------------------------
+// 🌐 ГЛОБАЛЬНІ СТИЛІ
+// ----------------------------
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// ----------------------------
+// 🔝 ХЕДЕР
+// ----------------------------
+header {
+  background-color: $section-color;
+  padding: 0.6rem 2rem;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $accent-color;
+      margin-right: 0.5rem;
+    }
+
+    span {
+      color: $accent-color;
+      //font-weight: bold;
+      font-size: 1.2rem;
+      margin-left: 0.3rem
+    }
+  }
+
+  // ----------------------------
+// НАВІГАЦІЯ
+// ----------------------------
+
+  nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .burger {
+    display: none;
+    cursor: pointer;
+
+    img {
+      width: 35px;
+      height: 35px;
+      filter: brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(685%) hue-rotate(116deg) brightness(95%) contrast(95%);
+    }
+  }
+}
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    li a {
+      position: relative;
+      color: $text-color;
+      text-decoration: none;
+      padding: 0.5rem 0.5rem;
+      transition: color 0.3s ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: $highlight-color; 
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after, &.active::after {
+        width: 100%;
+      }
+     
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+  
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem 1rem; // Зменшення відступів для компактності
+
+    nav {
+      flex-direction: column;
+      align-items: flex-end;
+
+      .burger {
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: $section-color;
+        padding: 1rem 1.5rem; // Зменшення внутрішніх відступів
+        border-radius: 0.5rem;
+        z-index: 1000;
+        width: 200px; // Фіксована ширина для стабільності
+
+        &.active {
+          display: flex;
+        }
+
+        li a {
+          font-size: 1.1rem;
+          padding: 0.4rem 0.4rem; // Зменшення вертикального відступу
+
+          &::after {
+            bottom: -2px;
+          }
+        }
+      }
+    }
+
+    .logo {
+      svg {
+        width: 28px; // Зменшення логотипу для мобільних
+        height: 28px;
+      }
+
+      span {
+        font-size: 1.1rem; // Зменшення розміру тексту логотипу
+      }
+    }
+  }
+
+  // Мобільна адаптація кнопок
+  .buttons-wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem; // Збільшення для зручності натискання
+    font-size: 1rem;
+  }
+
+  .btn-lang {
+    width: 100%; // Повна ширина для кнопки мови
+    padding: 0.8rem 1rem; // Збільшення для кращого натискання
+    font-size: 1rem; // Збереження читабельності
+    border-width: 2px; // Збереження видимості бордера
+  }
+
+  main {
+    padding: 2rem 1rem; // Зменшення відступів для економії місця
+
+    h1 {
+      font-size: 2rem; // Зменшення заголовка
+    }
+
+    h2 {
+      font-size: 1rem; // Зменшення підзаголовка
+      max-width: 90%; // Більше місця для тексту
+    }
+  }
+}
+
+// ... (ваш існуючий код після @media) ...
+
+// ----------------------------
+// 🏠 ГОЛОВНА СЕКЦІЯ
+// ----------------------------
+main {
+  min-height: 80vh;
+  background-image: url('/assets/img/bg3.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+
+  .main-overlay {
+    background-color: rgba(30, 30, 30, 0.7); // темний прозорий фон
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+  h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    color: $accent-color;
+    margin-bottom: 1rem;
+
+    &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px; // трохи відступу знизу
+    width: 100%;
+    height: 3px;
+    background-color: $highlight-color; // або #d1b36d
+    }
+  }
+
+  h2 {
+    max-width: 700px;
+    font-size: 1.3rem;
+    color: $text-color;
+    line-height: 1.6;
+  }
+}
+}
+
+// ----------------------------
+// 🔚 ФУТЕР
+// ----------------------------
+footer {
+  background-color: $section-color;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: $highlight-color;
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  .created-by {
+    font-size: 0.8rem;
+    color: lighten($highlight-color, 20%);
+    //@debug color.adjust($highlight-color, $lightness: 20%);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+
+    a {
+      color: $highlight-color;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color; // бірюзовий — для підсвітки при наведенні
+      }
+    }
+  }
+}
+
+// ----------------------------
+// КНОПКИ
+// ----------------------------
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gallery {
+  background-color: #d1b36d;
+  color: #111;
+}
+
+.btn-gallery:hover {
+  background-color: transparent;
+  color: #d1b36d;
+  border-color: #d1b36d;
+}
+
+.btn-lang {
+  background-color: transparent;
+  border: 2px solid #d1b36d;
+  border-radius: 6px;
+  color: #d1b36d;
+}
+
+.btn-lang:hover {
+  background-color: #d1b36d;
+  color: #111;
+}
+// ----------------------------
+// КНОПКИ мобільна адаптація 
+// ----------------------------
+@media (max-width: 768px) {
+  .buttons-wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+// ----------------------------
+// Gallery Page 
+// ----------------------------
+.gallery-page{
+  min-height: 80vh;
+  background-image: url('/assets/img/background7.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+
+  .gallery-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 блоки на десктопі
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery-block {
+    background-color: rgba(255, 255, 255, 0.1); // напівпрозорий
+    border: 2px solid #d1b36d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      border-color: #5eead4;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+}
+
+ // 📱 Адаптивність
+
+  @media (max-width: 991px) {
+    .gallery-blocks {
+      grid-template-columns: repeat(2, 1fr); // 2 блоки
+    }
+  }
+
+  @media (max-width: 600px) {
+    .gallery-blocks {
+      grid-template-columns: 1fr; // 1 блок
+    }
+  }
+}
+
+// ----------------------------
+// Category Page 
+// ----------------------------
+.category-page {
+  min-height: 80vh;
+  background-image: url('/assets/img/background13.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  .category-overlay {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    color: $text-color;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $accent-color;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: $highlight-color;
+      margin: 0.5rem auto 2rem;
+      width: 60%;
+    }
+  }
+
+  p.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: $text-color;
+  }
+
+  /* Сітка карток */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* розтягує */
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid #d1b36d;
+      border-radius: 12px;
+      padding: 1rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+        border-color: #5eead4;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 0.8rem;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      p.description {
+        font-size: 1rem;
+        margin: 0;
+        color: #f5f5f5;
+        flex-grow: 1; /* щоб заповнювало простір */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .btn-back {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-color: #d1b36d;
+    color: #111;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: #d1b36d;
+      border-color: #d1b36d;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    p.description { font-size: 1rem; }
+    .image-gallery { grid-template-columns: 1fr; }
+  }
+}
+
+
+// ----------------------------
+// About Page 
+// ----------------------------
+
+.about-page {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .about-photo {
+    flex: 1 1 300px;
+    max-width: 350px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      border: 3px solid $highlight-color;
+    }
+  }
+
+  .about-content {
+    flex: 2 1 500px;
+    text-align: left;
+
+    h1 {
+      font-size: 2.5rem;
+      color: $accent-color;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: $highlight-color;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .about-quote {
+      font-style: italic;
+      border-left: 4px solid $highlight-color;
+      padding: 1.2rem 1rem;
+      background-color: $section-color;
+      color: $accent-color;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+    }
+  }
+
+  // 📱 Адаптивність
+  @media (max-width: 900px) {
+    .about-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about-content {
+      text-align: center;
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .about-quote {
+        text-align: center;
+      }
+    }
+  }
+
+  .buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    min-width: 200px; // ✅ фіксує однакову ширину
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-gallery {
+    background-color: $highlight-color;
+    color: #111;
+
+    &:hover {
+      background-color: transparent;
+      color: $highlight-color;
+      border-color: $highlight-color;
+    }
+  }
+}
+
+  @media (max-width: 768px) {
+    .buttons-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .btn {
+        width: 100%; // ✅ розтягується на всю ширину в мобілці
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+// ----------------------------
+// Contacts Page 
+// ----------------------------
+
+
+.contact-page {
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  background-color: $bg-color;
+  color: $text-color;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $accent-color;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    margin-bottom: 3rem;
+    text-align: center;
+
+    a {
+      color: $highlight-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin: 0.3rem 0;
+    }
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem; // ⬅️ додай внутрішній відступ
+    box-sizing: border-box;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
+      border: 1px solid $highlight-color;
+      font-size: 1rem;
+      background-color: $section-color;
+      color: #000;
+      box-sizing: border-box; 
+    }
+
+    button {
+      width: 100%;
+      background-color: $highlight-color;
+      color: #111;
+      padding: 0.8rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: transparent;
+        color: $highlight-color;
+        border: 2px solid $highlight-color;
+      }
+    }
+  }
+}
+
+// ----------------------------
+// Thank Page 
+// ----------------------------
+
+.thank-page {
+  min-height: 80vh;
+  background-image: url('/assets/img/bg4.jpg'); // змінити на свій фон
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: $text-color;
+
+  .thank-overlay {
+    background-color: rgba(30, 30, 30, 0.85); // темний напівпрозорий блок
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $accent-color;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 3px;
+      background-color: $highlight-color;
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto 2rem;
+  }
+
+  .thank-page-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .btn-back {
+      padding: 0.8rem 1.5rem;
+      background-color: $accent-color;
+      color: $bg-color;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      min-width: 220px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+        //background-color: color.adjust($color, $lightness: -10%);
+        //background-color: color.scale($accent-color, $lightness: -15%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .thank-page-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+
+
+// ----------------------------
+// Project Page 
+// ----------------------------
+
+.project-page {
+  min-height: 80vh;
+  background-image: url('/assets/img/bg3.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+
+  .project-overlay {
+    background-color: rgba(30, 30, 30, 0.85); // прозорий блок
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 1000px;
+    width: 100%;
+    color: $text-color;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $accent-color;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: $highlight-color;
+      margin: 0.5rem auto 1rem;
+      width: 60%;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: $text-color;
+  }
+
+  .tags {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    .tag {
+      display: inline-block;
+      background: $accent-color;
+      color: $bg-color;
+      border-radius: 1rem;
+      padding: 0.4rem 1rem;
+      margin: 0.2rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out; // додаємо анімацію
+
+    &:hover {
+      transform: scale(1.05); // ефект при наведенні
+      border: 2px solid #5eead4;
+      border-radius: 12px;
+    }
+  }
+}
+
+
+  .btn-back {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #d1b36d;
+    color: #111;
+
+    &:hover {
+      background-color: transparent;
+      color: #d1b36d;
+      border-color: #d1b36d;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    p { font-size: 1rem; }
+    .image-gallery img { max-width: 100%; }
+  }
+}
+
+//VIDEO SHORTS
+.shorts-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    aspect-ratio: 9 / 16;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .shorts-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    top: 0;
+    left: 0;
+  }
+
+  //VIDEO1 16*9
+
+  .video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  top: 0;
+  left: 0;
+}
+
+// ----------------------------
+// Error Page 
+// ----------------------------
+
+.error-page {
+  min-height: 80vh;
+  background-image: url('/assets/img/bg14.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: $text-color;
+
+  .error-overlay {
+    background-color: rgba(30, 30, 30, 0.85); // темний напівпрозорий блок
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $accent-color;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 3px;
+      background-color: $highlight-color;
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto 2rem;
+  }
+
+  .error-page-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .btn-back {
+      padding: 0.8rem 1.5rem;
+      background-color: $accent-color;
+      color: $bg-color;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      min-width: 220px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+        //background-color: color.adjust($color, $lightness: -10%);
+        //background-color: color.scale($accent-color, $lightness: -15%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .error-page-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+
+
