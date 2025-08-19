@@ -1,6 +1,6 @@
 title: "YK Portfolio"
-url: "https://yulyan4i4ek.github.io"
-baseurl: "/ykportfolio" # якщо сайт у корені репозиторію; якщо в папці — вкажи /назва-репозиторію
+url: "https://ykportfolio.github.io/"
+baseurl: "" # якщо сайт у корені репозиторію; якщо в папці — вкажи /назва-репозиторію
 
 plugins:
   - jekyll-datapage-generator
