@@ -23,5 +23,10 @@
   </div>
 </div>
 {% include footer.html t=t %}
+<script>
+    if (window.location.pathname.startsWith('/ua/')) {
+      window.location.href = '/ua/404.html';
+    }
+  </script>
   </body>
 </html>
