@@ -29,9 +29,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 {% include footer.html t=t %}
 <script>
-    if (window.location.pathname.startsWith('/ua/')) {
-      window.location.href = '/ua/404.html';
-    }
-  </script>
+  if (
+    window.location.pathname.startsWith('/ua/') &&
+    window.location.pathname !== '/ua/404.html'
+  ) {
+    window.location.href = '/ua/404.html';
+  }
+</script>
   </body>
 </html>

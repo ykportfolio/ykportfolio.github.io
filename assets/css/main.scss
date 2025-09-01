@@ -111,7 +111,7 @@ header {
 
 @media (max-width: 768px) {
   header {
-    padding: 0.8rem 1rem; // Зменшення відступів для компактності
+    padding: 0.8rem 1rem; 
 
     nav {
       flex-direction: column;
@@ -132,10 +132,10 @@ header {
         top: 100%;
         right: 0;
         background-color: $section-color;
-        padding: 1rem 1.5rem; // Зменшення внутрішніх відступів
+        padding: 1rem 1.5rem; 
         border-radius: 0.5rem;
         z-index: 1000;
-        width: 200px; // Фіксована ширина для стабільності
+        width: 200px; 
 
         &.active {
           display: flex;
@@ -143,7 +143,7 @@ header {
 
         li a {
           font-size: 1.1rem;
-          padding: 0.4rem 0.4rem; // Зменшення вертикального відступу
+          padding: 0.4rem 0.4rem; 
 
           &::after {
             bottom: -2px;
@@ -154,17 +154,17 @@ header {
 
     .logo {
       svg {
-        width: 28px; // Зменшення логотипу для мобільних
+        width: 28px; 
         height: 28px;
       }
 
       span {
-        font-size: 1.1rem; // Зменшення розміру тексту логотипу
+        font-size: 1.1rem; 
       }
     }
   }
 
-  // Мобільна адаптація кнопок
+  
   .buttons-wrapper {
     flex-direction: column;
     gap: 0.8rem;
@@ -173,32 +173,30 @@ header {
   .btn {
     width: 100%;
     text-align: center;
-    padding: 0.8rem 1rem; // Збільшення для зручності натискання
+    padding: 0.8rem 1rem; 
     font-size: 1rem;
   }
 
   .btn-lang {
-    width: 100%; // Повна ширина для кнопки мови
-    padding: 0.8rem 1rem; // Збільшення для кращого натискання
-    font-size: 1rem; // Збереження читабельності
-    border-width: 2px; // Збереження видимості бордера
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    font-size: 1rem; 
+    border-width: 2px; 
   }
 
   main {
-    padding: 2rem 1rem; // Зменшення відступів для економії місця
+    padding: 2rem 1rem; 
 
     h1 {
-      font-size: 2rem; // Зменшення заголовка
-    }
+      font-size: 2rem; 
 
     h2 {
-      font-size: 1rem; // Зменшення підзаголовка
-      max-width: 90%; // Більше місця для тексту
+      font-size: 1rem; 
+      max-width: 90%; 
     }
   }
 }
 
-// ... (ваш існуючий код після @media) ...
 
 // ----------------------------
 // 🏠 ГОЛОВНА СЕКЦІЯ
@@ -216,7 +214,7 @@ main {
   padding: 4rem 1rem;
 
   .main-overlay {
-    background-color: rgba(30, 30, 30, 0.7); // темний прозорий фон
+    background-color: rgba(30, 30, 30, 0.7); 
     padding: 2rem;
     border-radius: 1rem;
     max-width: 800px;
@@ -234,10 +232,10 @@ main {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -8px; // трохи відступу знизу
+    bottom: -8px; 
     width: 100%;
     height: 3px;
-    background-color: $highlight-color; // або #d1b36d
+    background-color: $highlight-color; 
     }
   }
 
@@ -282,7 +280,7 @@ footer {
       transition: color 0.3s ease;
 
       &:hover {
-        color: $accent-color; // бірюзовий — для підсвітки при наведенні
+        color: $accent-color; 
       }
     }
   }
@@ -368,7 +366,7 @@ footer {
 
   .gallery-blocks {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); // 3 блоки на десктопі
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     width: 100%;
     max-width: 1200px;
@@ -376,7 +374,7 @@ footer {
   }
 
   .gallery-block {
-    background-color: rgba(255, 255, 255, 0.1); // напівпрозорий
+    background-color: rgba(255, 255, 255, 0.1); 
     border: 2px solid #d1b36d;
     border-radius: 12px;
     padding: 1.5rem;
@@ -400,13 +398,13 @@ footer {
 
   @media (max-width: 991px) {
     .gallery-blocks {
-      grid-template-columns: repeat(2, 1fr); // 2 блоки
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
 
   @media (max-width: 600px) {
     .gallery-blocks {
-      grid-template-columns: 1fr; // 1 блок
+      grid-template-columns: 1fr; 
     }
   }
 }
@@ -641,7 +639,7 @@ footer {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    min-width: 200px; // ✅ фіксує однакову ширину
+    min-width: 200px; 
     border-radius: 6px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -666,7 +664,7 @@ footer {
       align-items: center;
 
       .btn {
-        width: 100%; // ✅ розтягується на всю ширину в мобілці
+        width: 100%; 
         max-width: 50%;
       }
     }
@@ -719,7 +717,7 @@ footer {
   form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 1rem; // ⬅️ додай внутрішній відступ
+    padding: 0 1rem; 
     box-sizing: border-box;
 
     input,
@@ -761,7 +759,7 @@ footer {
 
 .thank-page {
   min-height: 80vh;
-  background-image: url('/assets/img/bg4.jpg'); // змінити на свій фон
+  background-image: url('/assets/img/bg4.jpg'); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -773,7 +771,7 @@ footer {
   color: $text-color;
 
   .thank-overlay {
-    background-color: rgba(30, 30, 30, 0.85); // темний напівпрозорий блок
+    background-color: rgba(30, 30, 30, 0.85); 
     padding: 3rem 2rem;
     border-radius: 1rem;
     max-width: 800px;
@@ -863,7 +861,7 @@ footer {
   padding: 4rem 1rem;
 
   .project-overlay {
-    background-color: rgba(30, 30, 30, 0.85); // прозорий блок
+    background-color: rgba(30, 30, 30, 0.85); 
     padding: 2rem;
     border-radius: 1rem;
     max-width: 1000px;
@@ -918,10 +916,10 @@ footer {
     width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out; // додаємо анімацію
+    transition: transform 0.3s ease-in-out; 
 
     &:hover {
-      transform: scale(1.05); // ефект при наведенні
+      transform: scale(1.05); 
       border: 2px solid #5eead4;
       border-radius: 12px;
     }
@@ -932,6 +930,7 @@ footer {
   .btn-back {
     display: inline-block;
     padding: 0.6rem 1.2rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -1012,7 +1011,7 @@ footer {
   color: $text-color;
 
   .error-overlay {
-    background-color: rgba(30, 30, 30, 0.85); // темний напівпрозорий блок
+    background-color: rgba(30, 30, 30, 0.85); 
     padding: 3rem 2rem;
     border-radius: 1rem;
     max-width: 800px;
@@ -1080,7 +1079,7 @@ footer {
 
     .error-page-buttons {
       flex-direction: column;
-      align-items: center;
+      align-items: center}
     }
   }
 }
