@@ -5,6 +5,7 @@ baseurl: "" # якщо сайт у корені репозиторію; якщо
 plugins:
   - jekyll-datapage-generator
   - jekyll-sitemap
+  - jekyll-minifier
 
 datapage_gen:
   - data: projects
@@ -21,12 +22,22 @@ datapage_gen:
     extension: "html"
     lang: ua
 
+jekyll-minifier:
+  compress_html: true
+  compress_css: true
+  compress_javascript: true
+  remove_comments: true
+  remove_intertag_spaces: true
+  remove_multi_spaces: true
+  remove_quotes: true
+  simple_doctype: true
+
 require:
   - base64
   - csv
 
 sass:
-  sass_dir: assets/css
+  style: compressed
 
 permalink: pretty
 

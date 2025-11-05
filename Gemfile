@@ -10,3 +10,6 @@ gem "logger"
 gem "base64"
 gem "jekyll-sitemap"
 
+group :jekyll_plugins do
+  gem 'jekyll-minifier'
+end

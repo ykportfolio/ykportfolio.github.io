@@ -1,0 +1,23 @@
+{
+  "name": "ykportfolio.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minify-js": "uglifyjs assets/js/*.js -o assets/js/main.min.js -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykportfolio/ykportfolio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykportfolio/ykportfolio.github.io/issues"
+  },
+  "homepage": "https://github.com/ykportfolio/ykportfolio.github.io#readme",
+  "devDependencies": {
+    "uglify-js": "^3.19.3"
+  }
+}
