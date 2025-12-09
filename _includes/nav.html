@@ -11,6 +11,9 @@
       <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="{% if page.url == '/gallery/' or page.url == '/ua/gallery/' %}active{% endif %}">{{ t.nav.gallery }}</a>
     </li>
     <li>
+      <a href="{% if page.lang == 'en'%}/services/{% else %}/ua/services/{% endif %}" class="{% if page.url == '/services/' or page.url == '/ua/services/' %}active{% endif %}">{{ t.nav.services }}</a>
+    </li>
+    <li>
       <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="{% if page.url == '/contact/' or page.url == '/ua/contact/' %}active{% endif %}">{{ t.nav.contact }}</a>
     </li>
 

@@ -83,7 +83,7 @@ header {
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 0.5rem;
     list-style: none;
 
     li a {
@@ -181,7 +181,7 @@ header {
   }
 
   .btn {
-    width: 100%;
+    //width: 100%;
     text-align: center;
     padding: 0.8rem 1rem; 
     font-size: 1rem;
@@ -212,51 +212,129 @@ header {
 // ----------------------------
 // 🏠 ГОЛОВНА СЕКЦІЯ
 // ----------------------------
-main {
-  min-height: 80vh;
-  background-image: url('/assets/img/bg3.jpg'); 
-  background-size: cover;
-  background-position: center;
+.main-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 4rem 1rem;
+  overflow: hidden;
+  background-color: #0d0d0d;
 
-  .main-overlay {
-    background-color: rgba(30, 30, 30, 0.7); 
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 800px;
-    width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-
-  h1 {
+  .left-side, 
+  .right-side {
+    width: 50%;
+    height: 100%;
     position: relative;
-    display: inline-block;
-    font-size: 3rem;
-    color: $accent-color;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: #fff;
+  }
 
-    &::after {
-    content: "";
+  .left-side {
+    background: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0.85),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/assets/img/web_left.jpg') center/cover no-repeat;
+    text-align: left;
+  }
+
+  .right-side {
+    background: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0.85),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/assets/img/3d_right.jpg') center/cover no-repeat;
+    text-align: right;
+  }
+
+  .left-side h1,
+  .right-side h1 {
+    font-size: 2.8rem;
+    color: $accent-color;
+    max-width: 450px;
+    line-height: 1.2;
+  }
+
+  .left-side p,
+  .right-side p {
+    font-size: 1.2rem;
+    max-width: 420px;
+    margin-top: 1rem;
+    opacity: 0.85;
+  }
+
+  .center-photo {
+    background-image: url('/assets/img/heart.png');
     position: absolute;
-    left: 0;
-    bottom: -8px; 
-    width: 100%;
-    height: 3px;
-    background-color: $highlight-color; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6),
+                0 0 15px $accent-color;
+    display: flex;
+  }
+
+  
+  .photo-caption {
+    position: absolute;
+    top: calc(50% + 220px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #cfcfcf;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+
+  @media (max-width: 1024px) {
+    .left-side h1,
+    .right-side h1 {
+      font-size: 2rem;
+    }
+
+    .center-photo {
+      width: 300px;
+      height: 300px;
     }
   }
 
-  h2 {
-    max-width: 700px;
-    font-size: 1.3rem;
-    color: $text-color;
-    line-height: 1.6;
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .left-side, .right-side {
+      width: 90%;
+      height: 50vh;
+      text-align: center;
+    }
+
+    .center-photo {
+      display: none;
+      top: auto;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 280px;
+    }
+
+    .photo-caption {
+      display: none;
+      top: auto;
+      bottom: 0.5rem;
+    }
   }
-}
 }
 
 // ----------------------------
@@ -308,10 +386,12 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
   display: inline-block;
+  margin-bottom: 1rem;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   font-weight: 600;
@@ -344,18 +424,16 @@ footer {
   background-color: #d1b36d;
   color: #111;
 }
-// ----------------------------
-// КНОПКИ мобільна адаптація 
-// ----------------------------
+
 @media (max-width: 768px) {
   .buttons-wrapper {
     flex-direction: column;
     gap: 0.8rem;
     flex-wrap: nowrap;
+    margin-bottom: auto;
   }
 
   .btn {
-    width: 100%;
     text-align: center;
   }
 }
@@ -404,8 +482,6 @@ footer {
       margin-bottom: 1rem;
     }
 }
-
- // 📱 Адаптивність
 
   @media (max-width: 991px) {
     .gallery-blocks {
@@ -616,7 +692,6 @@ footer {
     }
   }
 
-  // 📱 Адаптивність
   @media (max-width: 900px) {
     .about-wrapper {
       flex-direction: column;
@@ -675,7 +750,6 @@ footer {
       align-items: center;
 
       .btn {
-        width: 100%; 
         max-width: 50%;
       }
     }
@@ -1094,6 +1168,279 @@ footer {
     }
   }
 
+// // ----------------------------
+// // Services Page 
+// // ----------------------------
+
+// .services-page {
+//   min-height: 80vh;
+//   background-image: url('/assets/img/bg14.jpg'); 
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   flex-wrap: wrap;          
+//   justify-content: center;   
+//   align-items: flex-start;   
+//   text-align: center;
+//   padding: 4rem 1rem;
+//   color: $text-color;
+//   gap: 2rem;                
+
+  
+//   .services-overlay {
+//     background-color: rgba(30, 30, 30, 0.85); 
+//     padding: 3rem 2rem;
+//     border-radius: 1rem;
+//     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+//     box-sizing: border-box;
+//     flex: 0 0 30%;
+//     max-width: 30%;
+//     width: 30%;
+//     text-align: left;
+//   }
+
+//   h1 {
+//     font-size: 3rem;
+//     color: $accent-color;
+//     margin-bottom: 1.5rem;
+//     position: relative;
+//     text-align: center;
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       bottom: -8px;
+//       width: 100%;
+//       height: 3px;
+//       background-color: $highlight-color;
+//     }
+//   }
+
+//   h2 {
+//     font-size: 2rem;
+//     margin-bottom: 1rem;
+//     position: relative;
+//     text-align: center;
+//   }
+//   h3 {
+//     font-size: 2rem;
+//     margin-bottom: 1rem;
+//     position: relative;
+//     text-align: center;
+//     color: $highlight-color;
+//   }
 
 
+//   p {
+//     font-size: 1.3rem;
+//     max-width: 600px;
+//     line-height: 1.6;
+//     margin: 0 auto 2rem;
+//   }
 
+//   .services-page-buttons {
+//     display: flex;
+//     justify-content: center;
+//     gap: 1rem;
+//     flex-wrap: wrap;
+
+//     .btn-back {
+//       padding: 0.8rem 1.5rem;
+//       background-color: $accent-color;
+//       color: $bg-color;
+//       border-radius: 0.5rem;
+//       text-decoration: none;
+//       font-weight: bold;
+//       transition: background-color 0.3s ease;
+//       min-width: 220px;
+//       text-align: center;
+
+//       &:hover {
+//         background-color: darken($accent-color, 10%);
+//       }
+//     }
+//   }
+
+//   @media (max-width: 1024px) {
+//     .services-overlay {
+//       flex: 0 0 47%;
+//       max-width: 47%;
+//       width: 47%;
+//     }
+//   }
+
+  
+//   @media (max-width: 768px) {
+//     padding: 2.5rem 1rem;
+
+//     h1 {
+//       font-size: 2rem;
+//     }
+
+//     p {
+//       font-size: 1.1rem;
+//     }
+
+//     .services-overlay {
+//       flex: 0 0 100%;
+//       max-width: 100%;
+//       width: 100%;
+//       text-align: center; 
+//     }
+
+//     .services-page-buttons {
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }
+
+
+.services-page {
+  min-height: 80vh;
+  background: linear-gradient(
+      to bottom right,
+      rgba(10, 10, 10, 0.7),
+      rgba(20, 20, 20, 0.85)
+    ),
+    url('/assets/img/bg14.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: $text-color;
+  gap: 2.5rem;
+
+  /* --- КАРТКИ ПОСЛУГ --- */
+  .services-overlay {
+    background: rgba(25, 25, 25, 0.7);
+    backdrop-filter: blur(6px);
+    padding: 2.5rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 30%;
+    max-width: 30%;
+    width: 30%;
+    text-align: left;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  /* --- ГОЛОВНИЙ ЗАГОЛОВОК --- */
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $accent-color;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(
+        90deg,
+        $highlight-color,
+        lighten($highlight-color, 15%)
+      );
+      border-radius: 3px;
+    }
+  }
+
+  /* --- ПІДЗАГОЛОВКИ --- */
+  h2, h3 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  h3 {
+    color: $highlight-color;
+    text-shadow: 0 0 8px rgba($highlight-color, 0.4);
+  }
+
+  /* --- ТЕКСТ --- */
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.7;
+    margin: 0 auto 2rem;
+    color: lighten($text-color, 5%);
+  }
+
+  /* --- КНОПКИ --- */
+  .services-page-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .btn-back {
+      padding: 0.9rem 1.7rem;
+      background-color: $accent-color;
+      color: $bg-color;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+      transition: background-color 0.3s ease, transform 0.25s ease;
+      min-width: 220px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  /* --- АДАПТИВ --- */
+  @media (max-width: 1024px) {
+    .services-overlay {
+      flex: 0 0 46%;
+      max-width: 46%;
+      width: 46%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .services-overlay {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .services-page-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

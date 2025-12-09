@@ -3,18 +3,27 @@ ua:
   title: "Юлія Карась | Портфоліо 3D-художниці"
   description: "Ознайомтеся з цифровими 3D-дизайнами Юлії Карась. Портфоліо уяви, інновацій та візуального сторітелінгу."
   view_gallery: "Переглянути галерею"
+  view_web: "Ознайомитись з Веб проектами"
+  order_web: "Замовити веб сайт"
+  view_3d: "Галерея 3D робіт"
+  order_3d: "Замовити 3D"
   back_mainpage: "Повернутись на головну"
+  select: "Замовити"
   contacts: "Зв'язатися зі мною"
   nav:
     about: "Про мене"
     gallery: "Галерея"
+    services: "Веб послуги"
     contact: "Контакти"
     language: "EN"
   hero:
-    title: "Ласкаво прошу у мій 3D світ"
-    subtitle: "Досліджуй мою колекцію 3D робіт. Пориньте у світ, де уява зустрічається з реальністю."
+    web_title: "Веб-розробниця"
+    web_description: "Створюю швидкі, адаптивні, багатомовні та візуально привабливі сайти для бізнесу та персональних брендів."
+    art_title: "3D художниця"
+    art_description: "3D — це моє творче хобі. Я створюю візуалізації, пропси для ігор, прості анімації продуктів та експресивні CGI-сцени."
+    caption: "Юлія Карась — Веб розробниця & 3D художниця"
   footer: 
-    copyright: "© 2025 3D художниця Юлія Карась. Всі права захищено."
+    copyright: "© 2025 Веб розробниця & 3D художниця Юлія Карась. Всі права захищено."
     created: "Сайт створено Юлією Карась"
   gallery:
     gameassets: "Ігрові активи"
@@ -26,18 +35,15 @@ ua:
     textures: "Моделі з PBR текстурами"
   aboutme:
     title: "Про мене"
-    subtitle1: "Де технології зустрічають бачення"
-    text1: "Привіт! Я Юлія Карась — веб-розробник та 3D-художниця. Для мене цифрове мистецтво та технології — це не просто набір інструментів, а спосіб допомагати людям, розвивати бізнеси та створювати проєкти, що залишають слід у серцях."
-    subtitle2: "Веб-розробка, що працює на результат"
-    text2: "Я допомагаю бізнесам і приватним клієнтам отримати ефективний онлайн-інструмент: створюю статичні та адаптивні сайти, оптимізую швидкодію, налаштовую аналітику GA4, роблю SEO-оптимізацію. Працюю з WordPress, Joomla, PrestaShop та використовую Git для командної роботи. Моє завдання — щоб сайт не лише гарно виглядав, а й працював швидко, був зручним і приносив результат."
-    subtitle3: "CGI з серцем"
-    text3: "Я мрію створювати CGI-мультфільми та 3D-проєкти, які зворушують і очі, і душу — історії, що навчають дітей доброті у світі, де так багато болю та війни. Поєдную творчість із професійними технічними навичками, щоб кожна робота була не просто зображенням, а повноцінною історією."
-    subtitle4: "Чим я можу бути корисною"
-    text4: "Для бізнесу — створю сучасні, адаптивні та швидкі сайти, які підвищують конверсії та імідж бренду."
-    text5: "Для онлайн-продажів — налаштую інтернет-магазини на WordPress, PrestaShop, з SEO та аналітикою для зростання продажів."
-    text6: "Для маркетингу та реклами — розроблю 3D-візуалізації продуктів, які привернуть увагу та продають."
-    text7: "Для ігор — змоделюю оптимізовані low-poly та PBR-ассети для інтерактивних проєктів."
-    text8: "Для особистих проєктів — допоможу втілити ідеї в 3D-моделях, рендерах або веб-сторінках, що справлять враження."
+    text1: "Привіт! Мене звати Юлія, я веброзробниця та 3D-художниця з України. Я закінчила Сумський державний університет за спеціальністю математика та програмування (спеціаліст у галузі системних наук і кібернетики: інформатика)."
+    subtitle2: "Освіта і досвід"
+    text2: "Маю ґрунтовну технічну освіту та реальний практичний досвід у розробці й роботі з сучасними цифровими інструментами. Добре розумію структуру комп’ютерних систем, логіку програмування та принципи створення якісних ІТ-продуктів. Легко опановую нові технології та гнучко поєдную технічні навички з творчими рішеннями — саме це дозволяє мені створювати продумані, зручні та візуально привабливі продукти для клієнтів."
+    subtitle3: "Моя пристрасть"
+    text3: "Моя пристрасть — візуальна сторона цифрового світу: дизайн, 3D-мистецтво та моушн-дизайн. Я люблю створювати речі, які не лише функціональні, а й естетично красиві та емоційно наповнені. Чи то вебсайт, чи 3D-модель, чи коротка анімація — я завжди прагну, щоб у роботі відчувалося життя і сенс."
+    subtitle4: "Моя мрія"
+    text4: "Моя найбільша мрія — стати однією з провідних творців дитячих анімаційних фільмів в Україні — історій, які не лише навчають, а й торкаються серця. Я вірю, що мистецтво й технології можуть разом надихати доброту, уяву та надію."
+    subtitle5: "Чим я можу бути корисною"
+    text5: "Як веброзробниця та цифрова художниця, я можу створити сучасні, привабливі та зручні сайти — від лендінгів і персональних портфоліо до невеликих бізнес-сайтів. Я приділяю увагу як дизайну, так і функціональності, щоб кожен проєкт не лише гарно виглядав, а й працював швидко та доносив потрібне повідомлення. Також можу допомогти з SEO-оптимізацією, покращенням UI/UX, підключенням аналітики чи форм зворотного зв’язку — усім, що потрібно для ефективної онлайн-присутності."    
     quote: "Створюй мистецтво та технології, що торкаються майбутнього — і серця прийдуть самі."
   contact:
     first-name: "Ім'я:"
@@ -51,7 +57,7 @@ ua:
     subtitle: "Маєш запитання чи пропозицію? Заповни форму нижче — я з радістю відповім."
   seo:
     about:
-      title: "Про мене – Юлія Карась | 3D Художниця та Візуалізатор"
+      title: "Про мене – Юлія Карась | 3D Художниця"
       description: "Дізнайтесь більше про Юлію Карась – 3D художницю, яка поєднує архітектурне моделювання з творчими CGI-проєктами. Відповідальна, надійна, відкрита до співпраці."
     contact:
       title: "Контакти – Зв'язок із Юлією Карась | 3D Портфоліо"
@@ -65,6 +71,21 @@ ua:
     error:
       title: "404 – Сторінку не знайдено | Портфоліо Юлії Карась"
       description: "Ой! Сторінку не знайдено. Поверніться на головну або перегляньте роботи Юлії Карась."
+    services:
+      title1: "START"
+      h31: "Від 6 000 грн"
+      h21: "Лендінг"
+      description1: "Кількість сторінок: 1 <br/>Дизайн: адаптивний, сучасний <br/>Форми: заявка / зворотний дзвінок <br/>CMS: немає (статичний сайт)<br/>Інтеграції: Google Analytics, Pixel (за бажанням)<br/>SEO: базове<br/>Термін: 2–5 днів<br/>Для кого: фрілансери, експерти, малі послуги"
+      title2: "BUSINESS"
+      h32: "Від 20 000 грн"
+      h22: "Сайт-візитка"
+      description2: "Кількість сторінок: 3–5<br/>Дизайн: у фірмовому стилі<br/>CMS: є (можете редагувати контент)<br/>Функціонал: сторінки про компанію, послуги, контакти<br/>Інтеграції: Google Analytics, карта, форми<br/>SEO: базова оптимізація + структура<br/>Термін: 5–10 днів<br/>Для кого: малий/середній бізнес"
+      title3: "PRO"
+      h33: "Від 40 000 грн"
+      h23: "Портфоліо/Магазин"
+      description3: "Кількість сторінок: 8–12<br/>Дизайн: преміальний, унікальний<br/>CMS: повний доступ до редагування, категорій, галерей<br/>Функціонал: каталог/галереї, блог, портфоліо<br/>Оплати: інтеграція Stripe/WayForPay/Paypal (за бажанням)<br/>SEO: технічне + налаштування мета-даних<br/>Термін: 10–20 днів<br/>Для кого: бренди, експерти, компанії, що хочуть масштабуватися"
+      
+
   
 
 
@@ -73,18 +94,27 @@ en:
   title: "Yuliia Karas | 3D Artist Portfolio"
   description: "Explore digital 3D designs by Yuliia Karas. A portfolio of imagination, innovation and visual storytelling."
   view_gallery: "View Gallery"
+  view_web: "View Web Projects"
+  order_web: "Order a Web Site"
+  view_3d: "View 3D arts"
+  order_3d: "Order 3D"
   back_mainpage: "Back mainpage"
+  select: "Select"
   contacts: "Contact me"
   nav:
     about: "About"
     gallery: "Gallery"
+    services: "Web services"
     contact: "Contact"
     language: "UA"
   hero:
-    title: "Welcome to my 3D world"
-    subtitle: "Explore my collection of 3D artwork. Dive into a world where imagination meets reality."
+    web_title: "Web Developer"
+    web_description: "I create fast, responsive, multilingual, and visually polished websites for businesses and personal brands."
+    art_title: "3D Artist"
+    art_description: "3D art is my creative passion. I produce visualizations, game-ready props, simple product animations, and expressive CGI scenes."
+    caption: "Yuliia Karas — Web Developer & 3D Artist"
   footer: 
-    copyright: "© 2025 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
+    copyright: "© 2025 Web Developer & 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
     created: "Created by Yuliia Karas"
   gallery:
     gameassets: "Game Assets"
@@ -96,18 +126,15 @@ en:
     textures: "Models with PBR Textures"
   aboutme: 
     title: "About Me"
-    subtitle1: "Where Technology Meets Vision"
-    text1: "Hi! I’m Yuliia Karas — a web developer and 3D artist. For me, digital art and technology are not just a set of tools, but a way to help people, grow businesses, and create projects that leave a lasting impact."
-    subtitle2: "Web Development That Delivers Results"
-    text2: "I help businesses and private clients get an effective online tool: I create static and responsive websites, optimize performance, set up GA4 analytics, and perform SEO optimization. I work with WordPress, Joomla, PrestaShop, and use Git for collaborative work. My goal is to ensure that a website not only looks great but also works fast, is user-friendly, and delivers results."
-    subtitle3: "CGI with Heart"
-    text3: "I dream of creating CGI animations and 3D projects that touch both the eyes and the soul — stories that teach children kindness in a world with so much pain and war. I combine creativity with professional technical skills so that each work becomes more than just an image, but a complete story."
-    subtitle4: "How I Can Be Helpful"
-    text4: "For businesses — I create modern, responsive, and fast websites that increase conversions and enhance brand image."
-    text5: "For online sales — I set up online stores on WordPress and PrestaShop with SEO and analytics to grow sales."
-    text6: "For marketing and advertising — I design 3D product visualizations that attract attention and sell."
-    text7: "For games — I model optimized low-poly and PBR assets for interactive projects."
-    text8: "For personal projects — I bring ideas to life in 3D models, renders, or web pages that make an impression."
+    text1: "Hi, I’m Yuliia, a web developer and 3D artist from Ukraine. I graduated from Sumy State University with a degree in Mathematics and Programming (Specialist in Systems Sciences and Cybernetics: Informatics)."
+    subtitle2: "Education and Experience"
+    text2: "I have a solid technical education and hands-on experience in development and working with modern digital tools. I have a strong understanding of computer system architecture, programming logic, and the principles behind creating high-quality IT products. I quickly learn new technologies and seamlessly combine technical expertise with creative thinking — allowing me to deliver well-crafted, user-friendly, and visually appealing products for my clients."
+    subtitle3: "My Passion"
+    text3: "My passion lies in the visual side of the digital world — design, 3D art, and motion. I love creating things that are not only functional but also beautiful and emotionally engaging. Whether it’s a website, a 3D model, or a short animation — I always aim to make it meaningful and full of life."
+    subtitle4: "My Dream"
+    text4: "My biggest dream is to become one of the leading creators of children’s animated films in Ukraine — stories that not only teach, but also touch the heart. I believe that art and technology can work together to inspire kindness, imagination, and hope."
+    subtitle5: "How I can be helpful"
+    text5: "As a web developer and digital artist, I can create modern, visually appealing, and user-friendly websites — from landing pages and personal portfolios to small business sites. I pay attention to both design and functionality, ensuring every project not only looks good but also works smoothly and communicates your message effectively. I can also help with SEO optimization, UI/UX improvements, and integration with analytics or contact forms — everything needed to make your online presence stand out."
     quote: "Create art and technology that touch the future — and hearts will follow."
   contact:
     first-name: "Name:"
@@ -121,7 +148,7 @@ en:
     subtitle: "Have a question or proposal? Fill out the form below and I'll get back to you soon."
   seo:
     about:
-      title: "About – Yuliia Karas | 3D Artist & Visual Creator"
+      title: "About – Yuliia Karas | 3D Artist"
       description: "Learn more about Yuliia Karas – a 3D artist combining architecture and creative CGI projects. Dedicated, reliable, and open to collaboration."
     contact:
       title: "Contact – Reach Out to Yuliia Karas | 3D Portfolio"
@@ -135,3 +162,16 @@ en:
     error:
       title: "404 – Page Not Found | Yuliia Karas Portfolio"
       description: "Oops! The page you're looking for doesn't exist. Go back to the homepage or explore Yuliia Karas' 3D works."
+    services:
+      title1: "START"
+      h31: "From €250."
+      h21: "Landing"
+      description1: "Pages: 1<br/>Design: responsive, modern<br/>Forms: contact / callback form<br/>CMS: none (static website)<br/>Integrations: Google Analytics, Meta Pixel (optional)<br/>SEO: basic<br/>Timeline: 2–5 days<br/>Best for: freelancers, experts, small services"
+      title2: "BUSINESS"
+      h32: "From €900."
+      h22: "Business Card Website"
+      description2: "Pages: 3–5<br/>Design: branded, custom style<br/>CMS: included (you can edit content)<br/>Features: company page, services, contacts<br/>Integrations: Google Analytics, map, forms<br/>SEO: basic optimization + structure<br/>Timeline: 5–10 days<br/>Best for: small and medium businesses"
+      title3: "PRO"
+      h23: "Portfolio / Mini-store"
+      h33: "From €1,500."
+      description3: "Pages: 8–12<br/>Design: premium, fully custom<br/>CMS: full access to editing, categories, galleries<br/>Features: catalog/galleries, blog, portfolio<br/>Payments: Stripe / WayForPay / PayPal integration (optional)<br/>SEO: technical optimization + metadata setup<br/>Timeline: 10–20 days<br/>Best for: brands, experts, and companies looking to grow"
