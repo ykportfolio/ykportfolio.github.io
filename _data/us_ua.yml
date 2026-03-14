@@ -1,6 +1,6 @@
 ua:
   lang: "ua"
-  title: "Юлія Карась | Портфоліо 3D-художниці"
+  title: "WEBand3D | Цифрова лабораторія"
   description: "Ознайомтеся з цифровими 3D-дизайнами Юлії Карась. Портфоліо уяви, інновацій та візуального сторітелінгу."
   view_gallery: "Переглянути галерею"
   view_web: "Ознайомитись з Веб проектами"
@@ -23,7 +23,7 @@ ua:
     art_description: "3D — це моє творче хобі. Я створюю візуалізації, пропси для ігор, прості анімації продуктів та експресивні CGI-сцени."
     caption: "Юлія Карась — Веб розробниця & 3D художниця"
   footer: 
-    copyright: "© 2025 Веб розробниця & 3D художниця Юлія Карась. Всі права захищено."
+    copyright: "© 2026 Веб розробниця & 3D художниця Юлія Карась. Всі права захищено."
     created: "Сайт створено Юлією Карась"
   gallery:
     gameassets: "Ігрові активи"
@@ -91,7 +91,7 @@ ua:
 
 en:
   lang: "en"
-  title: "Yuliia Karas | 3D Artist Portfolio"
+  title: "WEBand3D | Digital Lab"
   description: "Explore digital 3D designs by Yuliia Karas. A portfolio of imagination, innovation and visual storytelling."
   view_gallery: "View Gallery"
   view_web: "View Web Projects"
@@ -114,7 +114,7 @@ en:
     art_description: "3D art is my creative passion. I produce visualizations, game-ready props, simple product animations, and expressive CGI scenes."
     caption: "Yuliia Karas — Web Developer & 3D Artist"
   footer: 
-    copyright: "© 2025 Web Developer & 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
+    copyright: "© 2026 Web Developer & 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
     created: "Created by Yuliia Karas"
   gallery:
     gameassets: "Game Assets"

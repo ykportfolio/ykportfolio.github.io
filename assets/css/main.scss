@@ -40,7 +40,7 @@ header {
     align-items: center;
     
     img {
-      width: 100px; 
+      width: 280px; 
       height: auto; 
       margin-right: 0.5rem;
     }
@@ -90,7 +90,7 @@ header {
       position: relative;
       color: $text-color;
       text-decoration: none;
-      padding: 0.5rem 0.5rem;
+      padding: 0.4rem 0.4rem;
       transition: color 0.3s ease;
 
       &::after {
