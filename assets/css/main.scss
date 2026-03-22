@@ -163,14 +163,9 @@ header {
       img {
         width: 50px; 
       }
-      //svg {
-        //width: 28px; 
-        //height: 28px;
-      //}
-
       span {
-        font-size: 1.1rem; 
-      }
+        display: none; 
+      }   
     }
   }
 
@@ -238,7 +233,7 @@ header {
       rgba(20, 20, 20, 0.85),
       rgba(0, 0, 0, 0.9)
     ),
-    url('/assets/img/web_left.jpg') center/cover no-repeat;
+    url('/assets/img/web_left.webp') center/cover no-repeat;
     text-align: left;
   }
 
@@ -248,7 +243,7 @@ header {
       rgba(20, 20, 20, 0.85),
       rgba(0, 0, 0, 0.9)
     ),
-    url('/assets/img/3d_right.jpg') center/cover no-repeat;
+    url('/assets/img/3d_right.webp') center/cover no-repeat;
     text-align: right;
   }
 
