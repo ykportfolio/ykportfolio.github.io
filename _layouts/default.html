@@ -15,26 +15,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <section class="main-hero">
         <div class="left-side">
           <div class="content-box">
-            <h1>{{ t.hero.web_title }}</h1>
-            <p>{{ t.hero.web_description }}</p>
-            
-            {% if page.lang == "ua" %}
-              <a href="#" class="btn btn-gallery">{{ t.view_web }}</a>
-            {% else %}
-              <a href="#" class="btn btn-gallery">{{ t.view_web }}</a>
-            {% endif %}
-
-            {% if page.lang == "ua" %}
-              <a href="/ua/services/" class="btn btn-gallery">{{ t.order_web }}</a>
-            {% else %}
-              <a href="/services/" class="btn btn-gallery">{{ t.order_web }}</a>
-            {% endif %}
-          </div>
-        </div>
-         
-        <div class="right-side">
-          <div class="content-box">
-              
             <h1>{{ t.hero.art_title }}</h1>
             <p>{{ t.hero.art_description }}</p>
            
@@ -49,8 +29,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% else %}
               <a href="https://t.me/che3dmodeler" class="btn btn-gallery">{{ t.order_3d }}</a>
             {% endif %}
-
           </div>
+        </div>
+         
+        <div class="right-side">
+          <div class="content-box">
+
+            <h1>{{ t.hero.web_title }}</h1>
+            <p>{{ t.hero.web_description }}</p>
+            
+            {% if page.lang == "ua" %}
+              <a href="#" class="btn btn-gallery">{{ t.view_web }}</a>
+            {% else %}
+              <a href="#" class="btn btn-gallery">{{ t.view_web }}</a>
+            {% endif %}
+
+            {% if page.lang == "ua" %}
+              <a href="/ua/services/" class="btn btn-gallery">{{ t.order_web }}</a>
+            {% else %}
+              <a href="/services/" class="btn btn-gallery">{{ t.order_web }}</a>
+            {% endif %}
+              
+            </div>
         </div>
 
         <div class="photo-caption">
