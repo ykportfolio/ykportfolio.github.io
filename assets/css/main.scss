@@ -45,13 +45,6 @@ header {
       margin-right: 0.5rem;
     }
 
-    //svg {
-      //width: 32px;
-      //height: 32px;
-      //fill: $accent-color;
-      //margin-right: 0.5rem;
-    //}
-
     span {
       color: $accent-color;
       //font-weight: bold;
@@ -215,6 +208,51 @@ header {
   overflow: hidden;
   background-color: #0d0d0d;
 
+  .hero-bg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+.hero-bg img {
+  pointer-events: none;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+  
+ /* .overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.45);
+
+  z-index: 1;
+}*/
+
+
+.content-box {
+  position: relative;
+
+  z-index: 2;
+   max-width: 550px;
+
+  padding: 4rem;
+
+  color: white;
+}
+
   .left-side, 
   .right-side {
     width: 50%;
@@ -225,27 +263,42 @@ header {
     align-items: center;
     padding: 3rem;
     color: #fff;
+    overflow: hidden;
   }
 
+  
   .left-side {
-    background: linear-gradient(
-      to bottom,
-      rgba(20, 20, 20, 0.85),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url('/assets/img/web_left.webp') center/cover no-repeat;
     text-align: left;
   }
 
   .right-side {
-    background: linear-gradient(
-      to top,
-      rgba(20, 20, 20, 0.85),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url('/assets/img/3d_right.webp') center/cover no-repeat;
     text-align: right;
   }
+
+  .left-side .overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.85),
+    rgba(0, 0, 0, 0.9)
+  );
+
+  z-index: 1;
+}
+.right-side .overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 0.85),
+    rgba(0, 0, 0, 0.9)
+  );
+
+  z-index: 1;
+}
 
   .left-side h1,
   .right-side h1 {
@@ -276,6 +329,10 @@ header {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.6),
                 0 0 15px $accent-color;
     display: flex;
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+z-index: 10;
   }
 
   
@@ -290,6 +347,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     opacity: 0.9;
+    z-index: 11;
   }
 
 

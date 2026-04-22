@@ -7,6 +7,7 @@ ua:
   order_web: "Замовити веб сайт"
   view_3d: "Галерея 3D робіт"
   order_3d: "Замовити 3D"
+  shop_3d: "Магазин"
   back_mainpage: "Повернутись на головну"
   select: "Замовити"
   contacts: "Зв'язатися зі мною"
@@ -19,8 +20,8 @@ ua:
   hero:
     web_title: "Веб-розробниця"
     web_description: "Створюю швидкі, адаптивні, багатомовні та візуально привабливі сайти для бізнесу та персональних брендів."
-    art_title: "3D художниця"
-    art_description: "3D — це моє творче хобі. Я створюю візуалізації, пропси для ігор, прості анімації продуктів та експресивні CGI-сцени."
+    art_title: "3D художниця & Творець дизайну 3D друку"
+    art_description: "3D мистецтво — моя пристрасть. Створюю моделі для 3D друку, кастомні дизайни, пропси для ігор та CGI-візуалізації."
     caption: "Юлія Карась — Веб розробниця & 3D художниця"
   footer: 
     copyright: "© 2026 Веб розробниця & 3D художниця Юлія Карась. Всі права захищено."
@@ -98,6 +99,7 @@ en:
   order_web: "Order a Web Site"
   view_3d: "View 3D arts"
   order_3d: "Order 3D"
+  shop_3d: "Market"
   back_mainpage: "Back mainpage"
   select: "Select"
   contacts: "Contact me"
@@ -110,8 +112,8 @@ en:
   hero:
     web_title: "Web Developer"
     web_description: "I create fast, responsive, multilingual, and visually polished websites for businesses and personal brands."
-    art_title: "3D Artist"
-    art_description: "3D art is my creative passion. I produce visualizations, game-ready props, simple product animations, and expressive CGI scenes."
+    art_title: "3D Artist & Printable Design Creator"
+    art_description: "3D art is my passion. I create 3D printing models, custom designs, game props, and CGI visualizations."
     caption: "Yuliia Karas — Web Developer & 3D Artist"
   footer: 
     copyright: "© 2026 Web Developer & 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."

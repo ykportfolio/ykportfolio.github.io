@@ -13,11 +13,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% include header.html t=t %}
     <main>
      <section class="main-hero">
-        <div class="left-side">
+       <div class="left-side">
+         <picture class="hero-bg">
+
+    <!-- Mobile -->
+    <source 
+      media="(max-width: 768px)"
+      srcset="
+        /assets/img/3d-mobile.webp 1x,
+        /assets/img/3d-mobile@2x.webp 2x
+      ">
+
+    <!-- Tablet -->
+    <source 
+      media="(max-width: 1200px)"
+      srcset="
+        /assets/img/3d-tablet.webp 1x,
+        /assets/img/3d-tablet@2x.webp 2x
+      ">
+
+    <!-- Desktop -->
+    <img 
+      src="/assets/img/3d-desktop.webp"
+      srcset="/assets/img/3d-desktop@2x.webp 2x"
+      alt="3D arts"
+      class="bg-image"
+      loading="eager"
+      fetchpriority="high"
+    >
+
+  </picture>
+
+  <div class="overlay"></div>
           <div class="content-box">
+
+            
+
             <h1>{{ t.hero.art_title }}</h1>
             <p>{{ t.hero.art_description }}</p>
-           
+            
             {% if page.lang == "ua" %}
               <a href="/ua/gallery/" class="btn btn-gallery">{{ t.view_3d }}</a>
             {% else %}
@@ -29,11 +63,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% else %}
               <a href="https://t.me/che3dmodeler" class="btn btn-gallery">{{ t.order_3d }}</a>
             {% endif %}
-          </div>
+
+            
+              
+            </div>
         </div>
-         
-        <div class="right-side">
-          <div class="content-box">
+
+
+
+        <div class="photo-caption">
+           <p>{{ t.hero.caption }}</p>
+        </div>
+
+    <div class="center-photo">
+      
+    </div>
+
+    <div class="right-side">
+<picture class="hero-bg">
+
+    <!-- Mobile -->
+    <source 
+      media="(max-width: 768px)"
+      srcset="
+        /assets/img/web-mobile.webp 1x,
+        /assets/img/web-mobile@2x.webp 2x
+      ">
+
+    <!-- Tablet -->
+    <source 
+      media="(max-width: 1200px)"
+      srcset="
+        /assets/img/web-tablet.webp 1x,
+        /assets/img/web-tablet@2x.webp 2x
+      ">
+
+    <!-- Desktop -->
+    <img 
+      src="/assets/img/web-desktop.webp"
+      srcset="/assets/img/web-desktop@2x.webp 2x"
+      alt="Web development"
+      class="bg-image"
+      loading="lazy"
+    >
+
+  </picture>
+
+  <div class="overlay"></div>
+            <div class="content-box">
 
             <h1>{{ t.hero.web_title }}</h1>
             <p>{{ t.hero.web_description }}</p>
@@ -51,15 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% endif %}
               
             </div>
-        </div>
-
-        <div class="photo-caption">
-           <p>{{ t.hero.caption }}</p>
-        </div>
-
-    <div class="center-photo">
-      
-    </div>
+        
 
   </section>
 
