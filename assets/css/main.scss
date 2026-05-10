@@ -203,157 +203,136 @@ header {
 .main-hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   overflow: hidden;
   background-color: #0d0d0d;
 
   .hero-bg {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  z-index: 0;
-}
-
-.hero-bg img {
-  pointer-events: none;
-}
-
-.bg-image {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  display: block;
-}
-
-  
- /* .overlay {
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0,0,0,0.45);
-
-  z-index: 1;
-}*/
-
-
-.content-box {
-  position: relative;
-
-  z-index: 2;
-   max-width: 550px;
-
-  padding: 4rem;
-
-  color: white;
-}
-
-  .left-side, 
-  .right-side {
-    width: 50%;
+    position: absolute;
+    inset: 0;
+    width: 100%;
     height: 100%;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+  }
+
+  .left-side,
+  .right-side {
     position: relative;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    color: #fff;
     overflow: hidden;
+    color: #fff;
   }
 
-  
   .left-side {
     text-align: left;
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0.85),
+        rgba(0, 0, 0, 0.9)
+      );
+      z-index: 1;
+    }
   }
 
   .right-side {
     text-align: right;
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(20, 20, 20, 0.85),
+        rgba(0, 0, 0, 0.9)
+      );
+      z-index: 1;
+    }
   }
 
-  .left-side .overlay {
-  position: absolute;
-  inset: 0;
+  .content-box {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    color: white;
+  }
 
-  background: linear-gradient(
-    to bottom,
-    rgba(20, 20, 20, 0.85),
-    rgba(0, 0, 0, 0.9)
-  );
-
-  z-index: 1;
-}
-.right-side .overlay {
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    to top,
-    rgba(20, 20, 20, 0.85),
-    rgba(0, 0, 0, 0.9)
-  );
-
-  z-index: 1;
-}
-
-  .left-side h1,
-  .right-side h1 {
+  h1 {
     font-size: 2.8rem;
     color: $accent-color;
-    max-width: 450px;
     line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
-  .left-side p,
-  .right-side p {
+  p {
     font-size: 1.2rem;
-    max-width: 420px;
-    margin-top: 1rem;
+    line-height: 1.6;
     opacity: 0.85;
   }
 
   .center-photo {
-    background-image: url('/assets/img/heart.png');
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     width: 360px;
     height: 360px;
+
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6),
-                0 0 15px $accent-color;
-    display: flex;
+
+    background-image: url('/assets/img/heart.png');
     background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-z-index: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow:
+      0 0 40px rgba(0, 0, 0, 0.6),
+      0 0 15px $accent-color;
+
+    z-index: 10;
   }
 
-  
   .photo-caption {
     position: absolute;
     top: calc(50% + 220px);
     left: 50%;
     transform: translateX(-50%);
+
     font-size: 1rem;
     color: #cfcfcf;
+
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
+
     opacity: 0.9;
     z-index: 11;
   }
 
+  // ----------------------------
+  // TABLET
+  // ----------------------------
 
   @media (max-width: 1024px) {
-    .left-side h1,
-    .right-side h1 {
+    h1 {
       font-size: 2rem;
     }
 
@@ -363,29 +342,37 @@ z-index: 10;
     }
   }
 
+  // ----------------------------
+  // MOBILE
+  // ----------------------------
+
   @media (max-width: 768px) {
     flex-direction: column;
 
-    .left-side, .right-side {
-      width: 80%;
-      height: 50vh;
+    .left-side,
+    .right-side {
+      width: 100%;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
-    .center-photo {
-      display: none;
-      top: auto;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 280px;
-      height: 280px;
+    .content-box {
+      max-width: 100%;
+      padding: 0;
     }
 
+    h1 {
+      font-size: 1.4rem;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .center-photo,
     .photo-caption {
       display: none;
-      top: auto;
-      bottom: 0.5rem;
     }
   }
 }
