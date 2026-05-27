@@ -18,10 +18,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h1>{{ t.seo.error.title }}</h1>
   <p>{{ t.seo.error.description }}</p>
   <div class="error-page-buttons">
-  <a href="{% if page.lang == 'en' %}/{% else %}/ua/{% endif %}" class="btn-back">
+  <a href="{% if page.lang == 'en' %}/{% else %}/ua/{% endif %}" class="btn btn-secondary">
     {{ t.back_mainpage }}
   </a>
-  <a href="{% if page.lang == 'en' %}/gallery/{% else %}/ua/gallery/{% endif %}" class="btn-back">
+  <a href="{% if page.lang == 'en' %}/gallery/{% else %}/ua/gallery/{% endif %}" class="btn btn-secondary">
     {{ t.view_gallery }}
   </a>
   </div>

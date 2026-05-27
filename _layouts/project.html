@@ -87,9 +87,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% endif %}
       </div>
 
-      <a href="{% if lang == 'ua' %}/ua/gallery/{% else %}/gallery/{% endif %}" class="btn-back">
+      <a href="{% if lang == 'ua' %}/ua/gallery/{% else %}/gallery/{% endif %}" class="btn btn-primary">
         {% if lang == 'ua' %}← ← Назад до галереї{% else %}← ← Back to Gallery{% endif %}</a>
-      <a href="{% if lang == 'ua' %}/ua/gallery/{{ project.category_id }}{% else %}/gallery/{{ project.category_id }}{% endif %}" class="btn-back">
+      <a href="{% if lang == 'ua' %}/ua/gallery/{{ project.category_id }}{% else %}/gallery/{{ project.category_id }}{% endif %}" class="btn btn-primary">
         {% if lang == 'ua' %}← Назад до категорії{% else %}← Back to Category{% endif %}</a>
     </div>
   </div>

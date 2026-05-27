@@ -40,14 +40,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <blockquote class="about-quote">“{{ t.aboutme.quote }}”</blockquote>
           
           <div class="buttons-wrapper">
-              <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="btn btn-gallery">{{ t.contacts }}</a>
-              <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="btn btn-gallery">{{ t.view_gallery }}</a>
-            </div>
+            <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="btn btn-primary">{{ t.contacts }}</a>
+            <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="btn btn-primary">{{ t.view_gallery }}</a>
           </div>
-          </div>
-  </div>
+        </div>
+      </div>
+    </div>
 </div>
-
       
   {% include footer.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />

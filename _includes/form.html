@@ -15,9 +15,9 @@
     <label for="message">{{ t.contact.message }}</label><br>
     <textarea name="message" required></textarea>
 
-    <!--<input type="hidden" name="redirect" value="{% if page.lang == 'en' %}http://127.0.0.1:4000/thank/{% else %}http://127.0.0.1:4000/ua/thank/{% endif %}">-->
+    <!--<input type="hidden" name="redirect" value="{% if page.lang == 'en' %}http://weband.com/thank/{% else %}http://weband.com/ua/thank/{% endif %}">-->
     <input type="hidden" name="redirect" value="{% if page.lang == 'en' %}{{ site.url }}{{ site.baseurl }}/thank/{% else %}{{ site.url }}{{ site.baseurl }}/ua/thank/{% endif %}">
 
-    <button type="submit">{{ t.contact.send }}</button>
+    <button type="submit" class="btn btn-primary">{{ t.contact.send }}</button>
 
 </form>

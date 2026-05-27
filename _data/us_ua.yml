@@ -21,10 +21,11 @@ ua:
     web_title: "Веб-розробниця"
     web_description: "Створюю швидкі, адаптивні, багатомовні та візуально привабливі сайти для бізнесу та персональних брендів."
     art_title: "3D художниця & Творець дизайну 3D друку"
+    art_title_mobile: "STL Моделі & 3D Друк" 
     art_description: "3D мистецтво — моя пристрасть. Створюю моделі для 3D друку, кастомні дизайни, пропси для ігор та CGI-візуалізації."
     caption: "Юлія Карась — Веб розробниця & 3D художниця"
   footer: 
-    copyright: "© 2026 Веб розробниця & 3D художниця Юлія Карась. Всі права захищено."
+    copyright: "© 2026 WEBand3D Digital Lab. Усі права захищено."
     created: "Сайт створено Юлією Карась"
   gallery:
     gameassets: "Ігрові активи"
@@ -113,10 +114,11 @@ en:
     web_title: "Web Developer"
     web_description: "I create fast, responsive, multilingual, and visually polished websites for businesses and personal brands."
     art_title: "3D Artist & Printable Design Creator"
+    art_title_mobile: "STL Models & 3D Printing" 
     art_description: "3D art is my passion. I create 3D printing models, custom designs, game props, and CGI visualizations."
     caption: "Yuliia Karas — Web Developer & 3D Artist"
   footer: 
-    copyright: "© 2026 Web Developer & 3D Artist Yuliia Karas · Portfolio · All Rights Reserved."
+    copyright: "© 2026 WEBand3D Digital Lab. All rights reserved."
     created: "Created by Yuliia Karas"
   gallery:
     gameassets: "Game Assets"
