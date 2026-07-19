@@ -16,23 +16,27 @@ const hero = document.querySelector('.main-hero');
 const left = document.querySelector('.left-side');
 const right = document.querySelector('.right-side');
 
-hero.addEventListener('mousemove', (e) => {
-  const x = e.clientX;
-  const width = window.innerWidth;
+if (hero && left && right) {
 
-  if (x < width / 2) {
-    // HOVER LEFT
-    left.style.transform = "translateX(-15%)";
-    right.style.transform = "translateX(10%)";
-  } else {
-    // HOVER RIGHT
-    left.style.transform = "translateX(-10%)";
-    right.style.transform = "translateX(15%)";
-  }
-});
+    hero.addEventListener("mousemove", (e) => {
 
-hero.addEventListener('mouseleave', () => {
-  left.style.transform = "translateX(0)";
-  right.style.transform = "translateX(0)";
-});
+        const x = e.clientX;
+        const width = window.innerWidth;
+
+        if (x < width / 2) {
+            left.style.transform = "translateX(-15%)";
+            right.style.transform = "translateX(10%)";
+        } else {
+            left.style.transform = "translateX(-10%)";
+            right.style.transform = "translateX(15%)";
+        }
+
+    });
+
+    hero.addEventListener("mouseleave", () => {
+        left.style.transform = "translateX(0)";
+        right.style.transform = "translateX(0)";
+    });
+
+}
 

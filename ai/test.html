@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Gemini Test</title>
+</head>
+<body>
+
+<input id="msg" value="Привіт!">
+<button onclick="send()">Надіслати</button>
+
+<pre id="result"></pre>
+
+<script>
+async function send() {
+
+    const message = document.getElementById("msg").value;
+
+    const response = await fetch("http://127.0.0.1:8787", {
+        method: "POST",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify({
+            message
+        })
+    });
+
+    const data = await response.json();
+
+    document.getElementById("result").textContent =
+        JSON.stringify(data,null,2);
+
+}
+</script>
+
+</body>
+</html>

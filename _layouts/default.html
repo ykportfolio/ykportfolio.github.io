@@ -110,31 +110,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
    
   </main>
+  {% include chat.html %}
   {% include footer.html t=t %}
   
-  <script>
-const hero = document.querySelector('.main-hero');
-const left = document.querySelector('.left-side');
-const right = document.querySelector('.right-side');
-
-hero.addEventListener('mousemove', (e) => {
-  const x = e.clientX;
-  const width = window.innerWidth;
-
-  if (x < width / 2) {
-    // HOVER LEFT
-    left.style.transform = "translateX(90%)";
-    right.style.transform = "translateX(0%)";
-  } else {
-    // HOVER RIGHT
-    left.style.transform = "translateX(0%)";
-    right.style.transform = "translateX(90%)";
-  }
-});
-
-hero.addEventListener('mouseleave', () => {
-  left.style.transform = "translateX(0)";
-  right.style.transform = "translateX(0)";
-}); </script>
+  <script src="{{ '/assets/js/chat.js' | relative_url }}"></script>
   </body>
 </html>
