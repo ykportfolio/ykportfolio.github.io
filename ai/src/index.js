@@ -47,9 +47,9 @@ export default {
       }
     );
 
-    const data = await response.json();
+      const data = await response.json();
 
-    const text =
+      const text =
       data.candidates?.[0]?.content?.parts?.[0]?.text ??
       "No response";
 
