@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /knowledge.json
+---
+
+[
+{% assign first = true %}
+
+{% for page in site.pages %}
+  {% if page.knowledge %}
+
+    {% unless first %},{% endunless %}
+    {% assign first = false %}
+
+    {
+      "title": {{ page.title | default: "" | jsonify }},
+      "url": {{ page.url | jsonify }},
+      "layout": {{ page.layout | default: "" | jsonify }},
+      "lang": {{ page.lang | default: "" | jsonify }},
+      "slug": {{ page.slug | default: "" | jsonify }},
+      "category_id": {{ page.category_id | default: "" | jsonify }},
+      "knowledge": {{ page.knowledge | normalize_whitespace | jsonify }}
+    }
+
+  {% endif %}
+{% endfor %}
+]
