@@ -15,6 +15,7 @@ ua:
     about: "Про мене"
     gallery: "Галерея"
     services: "Веб послуги"
+    blog: "Блог"
     contact: "Контакти"
     language: "EN"
   hero:
@@ -86,6 +87,10 @@ ua:
       h33: "Від 40 000 грн"
       h23: "Портфоліо/Магазин"
       description3: "Кількість сторінок: 8–12<br/>Дизайн: преміальний, унікальний<br/>CMS: повний доступ до редагування, категорій, галерей<br/>Функціонал: каталог/галереї, блог, портфоліо<br/>Оплати: інтеграція Stripe/WayForPay/Paypal (за бажанням)<br/>SEO: технічне + налаштування мета-даних<br/>Термін: 10–20 днів<br/>Для кого: бренди, експерти, компанії, що хочуть масштабуватися"
+  article:
+    ab: "Про автора"
+    author: "Юлія Карась"
+    job: "Веб розробниця • 3D художниця • AI ентузіастка"
       
 
   
@@ -108,6 +113,7 @@ en:
     about: "About"
     gallery: "Gallery"
     services: "Web services"
+    blog: "Blog"
     contact: "Contact"
     language: "UA"
   hero:
@@ -179,3 +185,7 @@ en:
       h23: "Portfolio / Mini-store"
       h33: "From €1,500."
       description3: "Pages: 8–12<br/>Design: premium, fully custom<br/>CMS: full access to editing, categories, galleries<br/>Features: catalog/galleries, blog, portfolio<br/>Payments: Stripe / WayForPay / PayPal integration (optional)<br/>SEO: technical optimization + metadata setup<br/>Timeline: 10–20 days<br/>Best for: brands, experts, and companies looking to grow"
+  article:
+    ab: "About the author"
+    author: "Yuliia Karas"
+    job: "Web Developer • 3D Artist • AI Enthusiast"

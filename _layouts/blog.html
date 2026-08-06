@@ -1,0 +1,254 @@
+{% assign t = site.data.us_ua[page.lang] %}
+
+<!DOCTYPE html>
+<html lang="{{ t.lang }}">
+    
+{% include head.html %}
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    {% include header.html t=t %}
+
+{% assign posts = site.blog
+    | where:"lang", page.lang
+    | sort:"date"
+    | reverse %}
+
+{% assign hero = posts.first %}
+
+<div class="blog">
+
+{% if hero %}
+
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
+<section class="blog-hero">
+
+    <a href="{{ hero.url }}" class="hero-link">
+
+        <div class="hero-bg">
+
+            <img src="{{ hero.image }}" alt="{{ hero.title }}">
+
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container">
+
+            <div class="hero-panel">
+
+                <div class="hero-meta">
+
+                    {% if hero.category %}
+                    <span class="hero-category">
+
+                        {{ hero.category }}
+
+                    </span>
+                    {% endif %}
+
+                    <span>
+
+                        {{ hero.date | date: "%d %b %Y" }}
+
+                    </span>
+
+                    {% assign words = hero.content | number_of_words %}
+                    {% assign reading = words | divided_by:180 %}
+                    {% if reading < 1 %}
+                        {% assign reading = 1 %}
+                    {% endif %}
+
+                    <span>•</span>
+
+                    <span>
+
+                        {{ reading }} min read
+
+                    </span>
+
+                </div>
+
+                <h1>
+
+                    {{ hero.title }}
+
+                </h1>
+
+                <p>
+
+                    {% if hero.description %}
+
+                        {{ hero.description }}
+
+                    {% else %}
+
+                        {{ hero.excerpt | strip_html | truncatewords:35 }}
+
+                    {% endif %}
+
+                </p>
+
+                <span class="hero-button">
+
+                    {{ t.blog.read_more | default:"Read article" }}
+
+                    <span class="arrow">
+
+                        →
+
+                    </span>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</section>
+
+{% endif %}
+
+
+
+<!-- ===================================================== -->
+<!-- LATEST -->
+<!-- ===================================================== -->
+
+<section class="blog-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+
+                {{ t.blog.latest | default:"Latest Articles" }}
+
+            </h2>
+
+            <p>
+
+                {{ t.blog.subtitle | default:"Articles about Web Development, AI, Automation and 3D." }}
+
+            </p>
+
+        </div>
+
+
+
+        <div class="articles-grid">
+
+        {% for post in posts offset:1 %}
+
+            <article class="article-card">
+
+                <a href="{{ post.url }}">
+
+                    <div class="article-image">
+
+                        <img src="{{ post.image }}" alt="{{ post.title }}">
+
+                    </div>
+
+                    <div class="article-content">
+
+                        <div class="article-meta">
+
+                            {% if post.category %}
+                            <span class="article-category">
+
+                                {{ post.category }}
+
+                            </span>
+                            {% endif %}
+
+                            <span>
+
+                                {{ post.date | date:"%d %b %Y" }}
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            {{ post.title }}
+
+                        </h3>
+
+                        <p>
+
+                            {% if post.description %}
+
+                                {{ post.description }}
+
+                            {% else %}
+
+                                {{ post.excerpt | strip_html | truncatewords:24 }}
+
+                            {% endif %}
+
+                        </p>
+
+                        <span class="article-button">
+
+                            {{ t.blog.read_more | default:"Read article" }}
+
+                            →
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+        {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- PAGINATION -->
+<!-- ===================================================== -->
+
+<section class="blog-pagination">
+
+    <div class="container">
+
+        <button class="page-btn" disabled>
+
+            ← Previous
+
+        </button>
+
+        <button class="page-btn" disabled>
+
+            Next →
+
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+{% include footer.html t=t %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>

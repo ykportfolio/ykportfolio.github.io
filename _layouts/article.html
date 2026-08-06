@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+
+{% include head.html %}
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+
+{% include header.html %}
+
+{% assign t = site.data.us_ua[page.lang] %}
+
+<div class="article-page">
+
+    <!-- ===================================================== -->
+    <!-- HERO -->
+    <!-- ===================================================== -->
+
+    <section class="article-hero">
+
+        {% if page.image %}
+        <img
+            class="article-hero-image"
+            src="{{ page.image }}"
+            alt="{{ page.title }}">
+        {% endif %}
+
+        <div class="article-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="article-hero-card">
+
+                <div class="article-meta">
+
+                    {% if page.category %}
+                    <span class="article-category">
+                        {{ page.category }}
+                    </span>
+                    {% endif %}
+
+                    {% if page.date %}
+                    <span class="article-dot">•</span>
+
+                    <time datetime="{{ page.date | date_to_xmlschema }}">
+                        {{ page.date | date: "%d %B %Y" }}
+                    </time>
+                    {% endif %}
+
+                    {% assign words = content | number_of_words %}
+                    {% assign minutes = words | divided_by:180 %}
+                    {% if minutes < 1 %}
+                        {% assign minutes = 1 %}
+                    {% endif %}
+
+                    <span class="article-dot">•</span>
+
+                    <span>
+                        {{ minutes }} min read
+                    </span>
+
+                </div>
+
+                <h1>{{ page.title }}</h1>
+
+                {% if page.description %}
+                <p class="article-description">
+                    {{ page.description }}
+                </p>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ARTICLE -->
+    <!-- ===================================================== -->
+
+    <section class="article-section">
+
+        <div class="container">
+
+            <article class="article-content">
+
+                {{ content }}
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- TAGS -->
+    <!-- ===================================================== -->
+
+    {% if page.tags %}
+
+    <section class="article-tags">
+
+        <div class="container">
+
+            <h3>{{ t.article.tags | default:"Tags" }}</h3>
+
+            <div class="tags">
+
+                {% for tag in page.tags %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+    <!-- ===================================================== -->
+    <!-- AUTHOR -->
+    <!-- ===================================================== -->
+
+    <section class="article-author">
+
+        <div class="container">
+
+            <div class="author-card">
+
+                <div class="author-avatar">
+
+                    <!-- можна буде вставити фото -->
+                    <span>JK</span>
+
+                </div>
+
+                <div class="author-info">
+
+                    <span class="author-label">
+
+                        {{ t.article.ab }}
+
+                    </span>
+
+                    <h3>
+
+                        {{ t.article.author }}
+
+                    </h3>
+
+                    <p>
+
+                        {{ t.article.job }}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+<!-- RELATED ARTICLES -->
+<!-- ===================================================== -->
+
+{% assign related = site.blog
+    | where:"lang", page.lang
+    | where_exp:"item", "item.url != page.url" %}
+
+{% if page.category %}
+
+    {% assign related = related
+        | where:"category", page.category %}
+
+{% endif %}
+
+{% if related.size == 0 %}
+
+    {% assign related = site.blog
+        | where:"lang", page.lang
+        | where_exp:"item","item.url != page.url" %}
+
+{% endif %}
+
+{% assign related = related | limit:3 %}
+
+<section class="related-articles">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+
+                {{ t.article.more | default:"Continue reading" }}
+
+            </h2>
+
+        </div>
+
+        <div class="related-grid">
+
+            {% for post in related %}
+
+            <a href="{{ post.url }}" class="related-card">
+
+                <img
+                    src="{{ post.image }}"
+                    alt="{{ post.title }}">
+
+                <div class="related-content">
+
+                    <div class="related-meta">
+
+                        {% if post.category %}
+                        <span class="related-category">
+
+                            {{ post.category }}
+
+                        </span>
+                        {% endif %}
+
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+
+                            {{ post.date | date:"%d %b %Y" }}
+
+                        </time>
+
+                    </div>
+
+                    <h3>
+
+                        {{ post.title }}
+
+                    </h3>
+
+                    <p>
+
+                        {% if post.description %}
+                            {{ post.description | truncatewords:18 }}
+                        {% else %}
+                            {{ post.excerpt | strip_html | truncatewords:18 }}
+                        {% endif %}
+
+                    </p>
+
+                    <span class="related-link">
+
+                        {{ t.blog.read_more | default:"Read article" }}
+
+                        →
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

@@ -55,4 +55,7 @@ exclude:
   - README.md
   - package.json
   - package-lock.json
-  
+
+collections:
+  blog:
+    output: true

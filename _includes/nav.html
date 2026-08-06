@@ -14,16 +14,56 @@
       <a href="{% if page.lang == 'en'%}/services/{% else %}/ua/services/{% endif %}" class="{% if page.url == '/services/' or page.url == '/ua/services/' %}active{% endif %}">{{ t.nav.services }}</a>
     </li>
     <li>
+  <a href="{% if page.lang == 'en' %}/blog/{% else %}/ua/blog/{% endif %}"
+     class="{% if page.url == '/blog/' or page.url == '/ua/blog/' %}active{% endif %}">
+    {{ t.nav.blog }}
+  </a>
+</li>
+    <li>
       <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="{% if page.url == '/contact/' or page.url == '/ua/contact/' %}active{% endif %}">{{ t.nav.contact }}</a>
     </li>
 
-    <li class="nav-item lang-switch">
-      {% if page.lang == "ua" %}
+    
+<li class="nav-item lang-switch">
+
+{% if page.article_id %}
+
+    {% if page.lang == "ua" %}
+
+        {% assign translated = site.blog
+            | where:"article_id", page.article_id
+            | where:"lang", "en"
+            | first %}
+
+        {% if translated %}
+            <a href="{{ translated.url }}" class="btn-lang">EN</a>
+        {% endif %}
+
+    {% else %}
+
+        {% assign translated = site.blog
+            | where:"article_id", page.article_id
+            | where:"lang", "ua"
+            | first %}
+
+        {% if translated %}
+            <a href="{{ translated.url }}" class="btn-lang">UA</a>
+        {% endif %}
+
+    {% endif %}
+
+{% else %}
+
+    {% if page.lang == "ua" %}
         {% assign switch_url = page.url | remove_first: "/ua" %}
         <a href="{{ switch_url }}" class="btn-lang">EN</a>
-      {% else %}
+    {% else %}
         <a href="/ua{{ page.url }}" class="btn-lang">UA</a>
-      {% endif %}
-    </li>
+    {% endif %}
+
+{% endif %}
+
+</li>
+
   </ul>
 </nav>
