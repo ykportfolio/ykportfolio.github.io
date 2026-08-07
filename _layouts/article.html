@@ -28,9 +28,15 @@
 
         {% if page.image %}
         <img
-            class="article-hero-image"
-            src="{{ page.image }}"
-            alt="{{ page.title }}">
+    class="article-hero-image"
+    src="{{ page.image }}"
+    srcset="
+        {{ page.image | replace: '.webp', '-768.webp' }} 768w,
+        {{ page.image }} 1920w"
+    sizes="100vw"
+    alt="{{ page.title }}"
+    fetchpriority="high"
+    decoding="async">
         {% endif %}
 
         <div class="article-hero-overlay"></div>

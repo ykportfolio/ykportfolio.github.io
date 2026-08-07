@@ -33,7 +33,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="hero-bg">
 
-            <img src="{{ hero.image }}" alt="{{ hero.title }}">
+            <img
+    src="{{ hero.image }}"
+    srcset="
+        {{ hero.image | replace: '.webp', '-768.webp' }} 768w,
+        {{ hero.image }} 1920w"
+    sizes="100vw"
+    alt="{{ hero.title }}"
+    fetchpriority="high"
+    decoding="async">
 
         </div>
 
