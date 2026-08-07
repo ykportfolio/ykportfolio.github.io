@@ -93,6 +93,8 @@ ua:
     ab: "Про автора"
     author: "Юлія Карась"
     job: "Веб розробниця • 3D художниця • AI ентузіастка"
+  blog:
+    read_more: "Читати статтю"
       
 
   
@@ -193,3 +195,5 @@ en:
     ab: "About the author"
     author: "Yuliia Karas"
     job: "Web Developer • 3D Artist • AI Enthusiast"
+  blog:
+    read_more: "Read article"
