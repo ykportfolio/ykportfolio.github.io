@@ -224,8 +224,15 @@
             <a href="{{ post.url }}" class="related-card">
 
                 <img
-                    src="{{ post.image }}"
-                    alt="{{ post.title }}">
+    src="{{ post.image | replace: '.webp', '-768.webp' }}"
+    srcset="
+        {{ post.image | replace: '.webp', '-480.webp' }} 480w,
+        {{ post.image | replace: '.webp', '-768.webp' }} 768w,
+        {{ post.image }} 1920w"
+    sizes="(max-width: 768px) 100vw, 768px"
+    alt="{{ post.title }}"
+    loading="lazy"
+    decoding="async">
 
                 <div class="related-content">
 
