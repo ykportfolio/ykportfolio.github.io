@@ -77,16 +77,18 @@ ua:
     services:
       title1: "START"
       h31: "Від 6 000 грн"
-      h21: "Лендінг"
-      description1: "Кількість сторінок: 1 <br/>Дизайн: адаптивний, сучасний <br/>Форми: заявка / зворотний дзвінок <br/>CMS: немає (статичний сайт)<br/>Інтеграції: Google Analytics, Pixel (за бажанням)<br/>SEO: базове<br/>Термін: 2–5 днів<br/>Для кого: фрілансери, експерти, малі послуги"
+      h21: "Landing Page"
+      description1: "Кількість сторінок: 1<br/>Індивідуальний адаптивний дизайн<br/>Статичний сайт без CMS<br/>Форма зворотного зв'язку<br/>Базова SEO-оптимізація<br/>Підключення Google Analytics<br/>Оптимізація швидкодії<br/>Термін: 2–5 днів<br/>Для кого: фрілансери, експерти, локальний бізнес"
+
       title2: "BUSINESS"
       h32: "Від 20 000 грн"
-      h22: "Сайт-візитка"
-      description2: "Кількість сторінок: 3–5<br/>Дизайн: у фірмовому стилі<br/>CMS: є (можете редагувати контент)<br/>Функціонал: сторінки про компанію, послуги, контакти<br/>Інтеграції: Google Analytics, карта, форми<br/>SEO: базова оптимізація + структура<br/>Термін: 5–10 днів<br/>Для кого: малий/середній бізнес"
+      h22: "Бізнес-сайт"
+      description2: "Кількість сторінок: 5–10<br/>Унікальний адаптивний дизайн<br/>Статичний сайт на Jekyll<br/>Блог або розділ новин<br/>Форми зворотного зв'язку та Google Maps<br/>Технічна SEO-оптимізація<br/>Підключення Google Analytics та Search Console<br/>Термін: 5–10 днів<br/>Для кого: малий та середній бізнес"
+
       title3: "PRO"
       h33: "Від 40 000 грн"
-      h23: "Портфоліо/Магазин"
-      description3: "Кількість сторінок: 8–12<br/>Дизайн: преміальний, унікальний<br/>CMS: повний доступ до редагування, категорій, галерей<br/>Функціонал: каталог/галереї, блог, портфоліо<br/>Оплати: інтеграція Stripe/WayForPay/Paypal (за бажанням)<br/>SEO: технічне + налаштування мета-даних<br/>Термін: 10–20 днів<br/>Для кого: бренди, експерти, компанії, що хочуть масштабуватися"
+      h23: "Корпоративний сайт"
+      description3: "Кількість сторінок: 10+<br/>Повністю індивідуальний дизайн<br/>Блог, портфоліо або документація<br/>Багатомовність<br/>Розширена SEO-оптимізація<br/>Оптимізація швидкодії та Cloudflare<br/>AI-помічник (за бажанням)<br/>Термін: 10–20 днів<br/>Для кого: компанії, бренди та експерти"
   article:
     ab: "Про автора"
     author: "Юлія Карась"
@@ -174,17 +176,19 @@ en:
       description: "Oops! The page you're looking for doesn't exist. Go back to the homepage or explore Yuliia Karas' 3D works."
     services:
       title1: "START"
-      h31: "From €250."
-      h21: "Landing"
-      description1: "Pages: 1<br/>Design: responsive, modern<br/>Forms: contact / callback form<br/>CMS: none (static website)<br/>Integrations: Google Analytics, Meta Pixel (optional)<br/>SEO: basic<br/>Timeline: 2–5 days<br/>Best for: freelancers, experts, small services"
+      h31: "From €250"
+      h21: "Landing Page"
+      description1: "Pages: 1<br/>Custom responsive design<br/>Fast static website (no CMS)<br/>Contact form<br/>Basic SEO optimization<br/>Google Analytics integration<br/>Performance-focused<br/>Timeline: 2–5 days<br/>Best for: freelancers, local businesses, product launches"
+
       title2: "BUSINESS"
-      h32: "From €900."
-      h22: "Business Card Website"
-      description2: "Pages: 3–5<br/>Design: branded, custom style<br/>CMS: included (you can edit content)<br/>Features: company page, services, contacts<br/>Integrations: Google Analytics, map, forms<br/>SEO: basic optimization + structure<br/>Timeline: 5–10 days<br/>Best for: small and medium businesses"
+      h32: "From €700"
+      h22: "Business Website"
+      description2: "Pages: 5–10<br/>Unique responsive design<br/>Fast static website (Jekyll)<br/>Blog or news section<br/>Contact forms & Google Maps<br/>Technical SEO setup<br/>Google Analytics & Search Console<br/>Timeline: 5–10 days<br/>Best for: companies and growing businesses"
+
       title3: "PRO"
-      h23: "Portfolio / Mini-store"
-      h33: "From €1,500."
-      description3: "Pages: 8–12<br/>Design: premium, fully custom<br/>CMS: full access to editing, categories, galleries<br/>Features: catalog/galleries, blog, portfolio<br/>Payments: Stripe / WayForPay / PayPal integration (optional)<br/>SEO: technical optimization + metadata setup<br/>Timeline: 10–20 days<br/>Best for: brands, experts, and companies looking to grow"
+      h33: "From €1200"
+      h23: "Business Platform"
+      description3: "Pages: 10+<br/>Custom design & animations<br/>Blog / Portfolio / Documentation<br/>Multilingual website<br/>Advanced SEO optimization<br/>Cloudflare & performance optimization<br/>AI Assistant integration (optional)<br/>Timeline: 10–20 days<br/>Best for: companies that need a scalable web presence"
   article:
     ab: "About the author"
     author: "Yuliia Karas"
