@@ -447,7 +447,7 @@ footer p {
 
 footer .created-by {
   margin-top: .5rem;
-  color: lighten($highlight-color, $lightness: 20%);
+  color: adjust-color($highlight-color, $lightness: 20%);
   font-size: .8rem;
   font-style: italic;
 }
@@ -1962,7 +1962,7 @@ footer .social-icons a:hover {
       text-align: center;
 
       &:hover {
-        background-color: color.adjust($accent-color, $lightness: -10%);
+        background-color: adjust-color($accent-color, $lightness: -10%);
       }
     }
   }
@@ -2192,7 +2192,7 @@ footer .social-icons a:hover {
       text-align: center;
 
       &:hover {
-        background-color: color.adjust($accent-color, $lightness: -10%);
+        background-color: adjust-color($accent-color, $lightness: -10%);
       }
     }
   }
@@ -2272,7 +2272,7 @@ footer .social-icons a:hover {
       background: linear-gradient(
         90deg,
         $highlight-color,
-        color.adjust($highlight-color, $lightness: 15%)
+        adjust-color($highlight-color, $lightness: 15%)
       );
       border-radius: 3px;
     }
@@ -2297,7 +2297,7 @@ footer .social-icons a:hover {
     max-width: 600px;
     line-height: 1.7;
     margin: 0 auto 2rem;
-    color: color.adjust($text-color, $lightness: 5%);
+    color: adjust-color($text-color, $lightness: 5%);
   }
 
   
@@ -2320,7 +2320,7 @@ footer .social-icons a:hover {
       text-align: center;
 
       &:hover {
-        background-color: color.adjust($accent-color, $lightness: -10%);
+        background-color: adjust-color($accent-color, $lightness: -10%);
         transform: translateY(-3px);
       }
     }
