@@ -447,7 +447,7 @@ footer p {
 
 footer .created-by {
   margin-top: .5rem;
-  color: color.adjust($highlight-color, $lightness: 20%);
+  color: lighten($highlight-color, $lightness: 20%);
   font-size: .8rem;
   font-style: italic;
 }
