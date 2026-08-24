@@ -95,6 +95,31 @@ ua:
     job: "Веб розробниця • 3D художниця • AI ентузіастка"
   blog:
     read_more: "Читати статтю"
+  hero:
+    eyebrow: "ЛАСКАВО ПРОШУ ДО МОЄЇ ЦИФРОВОЇ ЛАБОРАТОРІЇ"
+    title_line_1: "Я СТВОРЮЮ ЦИФРОВІ"
+    title_line_2: "ВРАЖЕННЯ"
+    title_line_3: "ТА 3D-СВІТИ"
+    description: "Веброзробниця та 3D-художниця. Створюю інтерактивні сайти, DIY 3D-моделі та власні цифрові й фізичні продукти."
+    view_work: "Переглянути роботи"
+    work_together: "Працювати разом"
+    octopus_alt: "3D-друкований восьминіг"
+    callout_print_title: "DIY 3D МОДЕЛЮВАННЯ"
+    callout_print_text: "ВІД ІДЕЇ ДО ВЛАСНОЇ МОДЕЛІ<br>СТВОРЮЮ ТА ЕКСПЕРИМЕНТУЮ"
+    callout_animation_title: "ПРОЦЕДУРНА АНІМАЦІЯ"
+    callout_animation_text: "ГЕНЕРАТИВНИЙ РУХ<br>УНІКАЛЬНИЙ ЩОРАЗУ"
+    callout_quality_title: "ВІД ІДЕЇ ДО ПРОДУКТУ"
+    callout_quality_text: "3D МОДЕЛІ • STL • ФІЗИЧНІ РЕЧІ<br>СТВОРЕНІ В МОЇЙ МАЙСТЕРНІ"
+    scroll: "СКРОЛЬТЕ ДЛЯ ПЕРЕГЛЯДУ"
+  services1:
+    web_title: "Веброзробка"
+    web_text: "Швидкі, адаптивні сайти на сучасних технологіях."
+    print_title: "3D МИСТЕЦТВО & DIY"
+    print_text: "Власні 3D-моделі, експерименти, моделі для друку та фізичні вироби."
+    digital_title: "Цифрові враження"
+    digital_text: "Швидкі, інтерактивні сайти, що перетворюють ідеї на цифровий досвід."
+    support_title: "Від ідеї до продукту"
+    support_text: "Експериментую, створюю, друкую та перетворюю ідеї на речі, якими можна користуватися."
       
 
   
@@ -197,3 +222,29 @@ en:
     job: "Web Developer • 3D Artist • AI Enthusiast"
   blog:
     read_more: "Read article"
+  hero:
+    eyebrow: "WELCOME TO MY DIGITAL LAB"
+    title_line_1: "I CREATE DIGITAL"
+    title_line_2: "EXPERIENCES"
+    title_line_3: "& 3D WORLDS"
+    description: "Web developer and 3D artist. I create interactive websites, DIY 3D models, and my own digital and physical products."
+    view_work: "View My Work"
+    work_together: "Let's Work Together"
+    octopus_alt: "3D printed octopus"
+    callout_print_title: "DIY 3D MODELING"
+    callout_print_text: "ORIGINAL IDEAS & EXPERIMENTS<br>MODELS FOR DIY 3D PRINTING"
+    callout_animation_title: "PROCEDURAL ANIMATION"
+    callout_animation_text: "GENERATIVE MOTION<br>EVERY TIME UNIQUE"
+    callout_quality_title: "FROM IDEA TO PRODUCT"
+    callout_quality_text: "3D MODELS • STLs • PHYSICAL PRODUCTS<br>CREATED IN MY WORKSHOP"
+    scroll: "SCROLL TO EXPLORE"
+  services1:
+    web_title: "Web Development"
+    web_text: "Fast, responsive websites with modern technologies."
+    print_title: "3D Art & DIY"
+    print_text: "Original 3D models, experiments, printable designs, and physical creations."
+    digital_title: "Digital Experiences"
+    digital_text: "Fast, interactive websites built to turn ideas into digital experiences."
+    support_title: "From Idea to Product"
+    support_text: "I experiment, create, print, and turn ideas into things you can actually use."
+      

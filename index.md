@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: en
+test_home: true
 
 knowledge: >
   WebAnd3D Digital Lab is a digital studio founded by Yuliia Karas.

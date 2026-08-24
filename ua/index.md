@@ -1,10 +1,11 @@
 ---
 layout: default
 lang: ua
+test_home: true
 ---
 
-{% include header.html %}
+{% include header.html t=t%}
 
 {{content}}
 
-{% include footer.html %}
+{% include footer.html t=t%}

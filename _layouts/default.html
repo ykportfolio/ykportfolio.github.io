@@ -2,117 +2,358 @@
 
 <!DOCTYPE html>
 <html lang="{{ t.lang }}">
-    
+
 {% include head.html %}
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    {% include header.html t=t %}
-    <main>
-     <section class="main-hero">
-       <div class="left-side">
-         <picture class="hero-bg">
+<body>
 
-    <!-- Mobile -->
-    <source media="(max-width: 768px)" srcset="/assets/img/3d-mobile.webp">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Tablet -->
-    <source media="(max-width: 1200px)" srcset="/assets/img/3d-tablet.webp">
 
-    <!-- Desktop -->
-    <img src="/assets/img/3d-desktop.webp" alt="3D arts" class="bg-image" loading="eager" fetchpriority="high">
+  {% include header.html t=t %}
 
-  </picture>
 
-  <div class="overlay"></div>
-          <div class="content-box">
+  <main>
 
-            
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-            
-            <h1>
-              <span class="desktop-title">
-                {{ t.hero.art_title }}
-              </span>
-              <span class="mobile-title">
-                {{ t.hero.art_title_mobile }}
-              </span>
-            </h1>
-            <p>{{ t.hero.art_description }}</p>
-            
+    <section class="hero">
+
+      <!-- Particle background -->
+      <canvas
+        id="particleCanvas"
+        class="hero-particles"
+        aria-hidden="true">
+      </canvas>
+
+
+      <!-- Background glow -->
+      <div class="hero-glow" aria-hidden="true"></div>
+
+
+      <!-- =================================================
+           HERO CONTENT
+      ================================================== -->
+
+      <div class="hero-content">
+
+
+        <!-- LEFT SIDE -->
+        <div class="hero-copy">
+
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            {{ t.hero.eyebrow }}
+          </div>
+
+
+          <h1 class="hero-title">
+
+            <span>
+              {{ t.hero.title_line_1 }}
+            </span>
+
+            <span class="accent">
+              {{ t.hero.title_line_2 }}
+            </span>
+
+            <span>
+              {{ t.hero.title_line_3 }}
+            </span>
+
+          </h1>
+
+
+          <p class="hero-description">
+            {{ t.hero.description }}
+          </p>
+
+
+          <div class="hero-actions">
+
             {% if page.lang == "ua" %}
-              <a href="/ua/gallery/" class="btn btn-primary">{{ t.view_3d }}</a>
+
+              <a
+                href="/ua/gallery/"
+                class="btn btn-primary">
+                {{ t.hero.view_work }}
+                <span>↗</span>
+              </a>
+
             {% else %}
-              <a href="/gallery/" class="btn btn-primary">{{ t.view_3d }}</a>
+
+              <a
+                href="/gallery/"
+                class="btn btn-primary">
+                {{ t.hero.view_work }}
+                <span>↗</span>
+              </a>
+
             {% endif %}
 
+
             {% if page.lang == "ua" %}
-              <a href="https://t.me/che3dmodeler" class="btn btn-primary">{{ t.order_3d }}</a>
+
+              <a
+                href="/ua/contact/"
+                class="btn btn-outline">
+                {{ t.hero.work_together }}
+                <span>↗</span>
+              </a>
+
             {% else %}
-              <a href="https://t.me/che3dmodeler" class="btn btn-primary">{{ t.order_3d }}</a>
+
+              <a
+                href="/contact/"
+                class="btn btn-outline">
+                {{ t.hero.work_together }}
+                <span>↗</span>
+              </a>
+
             {% endif %}
 
-            
-              
-            </div>
+          </div>
+
         </div>
 
 
+        <!-- =================================================
+             OCTOPUS / VISUAL AREA
+        ================================================== -->
 
-        <div class="photo-caption">
-           <p>{{ t.hero.caption }}</p>
+        <div class="hero-visual">
+
+          <div class="hero-grid"
+               aria-hidden="true">
+          </div>
+
+
+          <!-- SVG OCTOPUS -->
+          <div class="octopus-wrapper">
+
+            <img
+              src="/assets/img/octopus.svg"
+              alt="{{ t.hero.octopus_alt }}"
+              class="hero-octopus"
+              loading="eager"
+              fetchpriority="high">
+
+          </div>
+
+
+          <!-- 3D PRINT PLATFORM -->
+          <div
+            class="print-platform"
+            aria-hidden="true">
+
+            <div class="platform-grid"></div>
+
+          </div>
+
+
+          <!-- =================================================
+               CALLOUTS
+          ================================================== -->
+
+          <div class="hero-callout callout-print">
+
+            <span class="callout-line"></span>
+
+            <div>
+              <strong>
+                {{ t.hero.callout_print_title }}
+              </strong>
+
+              <small>
+                {{ t.hero.callout_print_text }}
+              </small>
+            </div>
+
+          </div>
+
+
+          <div class="hero-callout callout-animation">
+
+            <span class="callout-line"></span>
+
+            <div>
+              <strong>
+                {{ t.hero.callout_animation_title }}
+              </strong>
+
+              <small>
+                {{ t.hero.callout_animation_text }}
+              </small>
+            </div>
+
+          </div>
+
+
+          <div class="hero-callout callout-quality">
+
+            <span class="callout-line"></span>
+
+            <div>
+              <strong>
+                {{ t.hero.callout_quality_title }}
+              </strong>
+
+              <small>
+                {{ t.hero.callout_quality_text }}
+              </small>
+            </div>
+
+          </div>
+
+
+          <!-- SCROLL -->
+          <div class="hero-scroll">
+
+            <span class="scroll-icon">
+              ↓
+            </span>
+
+            <span>
+              {{ t.hero.scroll }}
+            </span>
+
+          </div>
+
         </div>
 
-    <div class="center-photo">
-      
-    </div>
+      </div>
 
-    <div class="right-side">
-<picture class="hero-bg">
 
-    <!-- Mobile -->
-    <source media="(max-width: 768px)" srcset="/assets/img/web-mobile.webp">
+      <!-- =================================================
+           HERO NAVIGATION DOTS
+      ================================================== -->
 
-    <!-- Tablet -->
-    <source media="(max-width: 1200px)" srcset="/assets/img/web-tablet.webp">
+      <div class="hero-dots" aria-hidden="true">
 
-    <!-- Desktop -->
-    <img 
-      src="/assets/img/web-desktop.webp" alt="Web development" class="bg-image" loading="lazy">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-  </picture>
+      </div>
 
-  <div class="overlay"></div>
-            <div class="content-box">
+    </section>
 
-            <h1>{{ t.hero.web_title }}</h1>
-            <p>{{ t.hero.web_description }}</p>
-            
-            {% if page.lang == "ua" %}
-              <a href="#" class="btn btn-primary">{{ t.view_web }}</a>
-            {% else %}
-              <a href="#" class="btn btn-primary">{{ t.view_web }}</a>
-            {% endif %}
 
-            {% if page.lang == "ua" %}
-              <a href="/ua/services/" class="btn btn-primary">{{ t.order_web }}</a>
-            {% else %}
-              <a href="/services/" class="btn btn-primary">{{ t.order_web }}</a>
-            {% endif %}
-              
-            </div>
-        
+    <!-- =====================================================
+         SERVICES STRIP
+    ====================================================== -->
 
-  </section>
+    <section class="services-strip">
 
-   
+      <div class="service-item">
+
+        <div class="service-icon">
+          <span>◇</span>
+        </div>
+
+        <div class="service-content">
+
+          <h2>
+            {{ t.services1.web_title }}
+          </h2>
+
+          <p>
+            {{ t.services1.web_text }}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-item">
+
+        <div class="service-icon">
+          <span>◇</span>
+        </div>
+
+        <div class="service-content">
+
+          <h2>
+            {{ t.services1.print_title }}
+          </h2>
+
+          <p>
+            {{ t.services1.print_text }}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-item">
+
+        <div class="service-icon code-icon">
+          &lt;/&gt;
+        </div>
+
+        <div class="service-content">
+
+          <h2>
+            {{ t.services1.digital_title }}
+          </h2>
+
+          <p>
+            {{ t.services1.digital_text }}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-item">
+
+        <div class="service-icon">
+          ✣
+        </div>
+
+        <div class="service-content">
+
+          <h2>
+            {{ t.services1.support_title }}
+          </h2>
+
+          <p>
+            {{ t.services1.support_text }}
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
+
+
   {% include chat.html %}
+
   {% include footer.html t=t %}
-  
+
+  <script src="{{ '/assets/js/particles.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/chat.js' | relative_url }}"></script>
-  </body>
+
+
+</body>
 </html>
