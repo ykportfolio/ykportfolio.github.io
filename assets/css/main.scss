@@ -3895,3 +3895,70 @@ footer .social-icons a:hover {
     color:#141414;
 
 }
+
+
+/* =====================================================
+   PARTICLE SITE ANIMATION
+   ===================================================== */
+
+#scene {
+    width: 600px;
+    height: 600px;
+
+    overflow: visible;
+}
+
+#leaf {
+    fill: none;
+
+    stroke: #0b2413;
+
+    stroke-width: 3;
+
+    opacity: 0;
+}
+
+
+.print-line {
+    fill: none;
+
+    stroke: #49c95d;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+#main-vein {
+    fill: none;
+
+    stroke: #137a32;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    opacity: 0;
+}
+
+#nozzle {
+    overflow: visible;
+}
+
+
+.nozzle-body {
+    fill: #aaa;
+
+    stroke: #222;
+
+    stroke-width: 3;
+}
+
+
+#nozzle-tip {
+    fill: #555;
+
+    stroke: none;
+}

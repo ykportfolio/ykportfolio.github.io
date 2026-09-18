@@ -85,7 +85,7 @@ aiassistant_description: >
   статичних вебсайтів.
 
 related:
-  - automation-small-business
+  - business-automation
 ---
 
 # Чому я обрала статичний сайт для свого бізнесу — і чому не повернуся до WordPress

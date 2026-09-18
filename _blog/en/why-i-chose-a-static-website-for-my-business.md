@@ -83,7 +83,7 @@ ai_topics:
   - ai assistant
 
 related:
-  - automation-small-business
+  - business-automation
 ---
 
 # Why I Chose a Static Website for My Business — And Why I'm Not Going Back to WordPress
