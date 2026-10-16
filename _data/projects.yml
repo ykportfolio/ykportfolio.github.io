@@ -12,8 +12,8 @@
     title: "Magic Staff"
     description: "Stylized game asset with hand-painted textures."
     description_img: 
-      - "Here will be your text about img 1"
-      - "Here will be your text about img 2"
+      - "Magic staff front view"
+      - "Magic staff wireframe"
     tags: ["Game Asset", "Stylized", "Fantasy"]
     alt:
       - "Magic staff front view"
@@ -22,8 +22,8 @@
     title: "Магічний посох"
     description: "Стилізований ігровий ассет з ручною текстурою."
     description_img: 
-      - "Тут буде текст стосовно картинки 1"
-      - "Тут буде текст стосовно картинки 2"
+      - "Магічний посох спереду"
+      - "Магічний посох у wireframe"
     tags: ["Ігровий обєкт", "Стилізація", "Фентезі"]
     alt:
       - "Магічний посох спереду"
@@ -43,8 +43,8 @@
     title: "Bar stools"
     description: "Realistic Chair for 3D Warehouse"
     description_img: 
-      - "Here will be your text about img 1"
-      - "Here will be your text about img 2"
+      - "Bar Stool 3d view"
+      - "PBR texture of bar stool"
     tags: ["Architectural Visualization", "Realism", "PBR Texture", "Bar Stool"]
     alt:
       - "Bar Stool 3d view"
@@ -53,8 +53,8 @@
     title: "Барні стільці"
     description: "Реалістичний стілець для 3D приміщень"
     description_img: 
-      - "Тут буде текст стосовно картинки 1"
-      - "Тут буде текст стосовно картинки 2"
+      - "Барний стілець - 3д вид"
+      - "PBR текстура барного стільця"
     tags: ["Архвіз", "Реалізм", "PBR текстура", "Барний стілець"]
     alt:
       - "Барний стілець - 3д вид"

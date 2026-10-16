@@ -12,7 +12,7 @@ ua:
   select: "Замовити"
   contacts: "Зв'язатися зі мною"
   nav:
-    about: "Про мене"
+    about: "Про нас"
     gallery: "Галерея"
     services: "Веб послуги"
     blog: "Блог"
@@ -37,15 +37,18 @@ ua:
     cgi: "CGI / Моушн-дизайн"
     textures: "Моделі з PBR текстурами"
   aboutme:
-    title: "Про мене"
-    subtitle1: "Життя — не пряма дорога"
-    text1: "Я люблю рух. Не обов’язково знати, куди саме він приведе. Іноді найцікавіше — просто звернути з дороги й подивитися, що буде далі. <br/> Моя пристрасть — швидкість, мотоцикли й дороги без чіткого маршруту. Побачити нові красиві місця, відчути вітер, свободу і той момент, коли ти просто їдеш, не думаючи, що буде за наступним поворотом. Люблю гарячу баню і холодну ополонку — коли можна вимкнути голову й нарешті відчути власне тіло. Люблю моменти, коли нікуди не треба поспішати. <br/> І дуже люблю свою сім’ю. Це, мабуть, найдорожче, що в мене є. <br/>Я мама трьох дівчаток, тому час із ними для мене справді важливий. Я не хочу одного дня озирнутися назад і зрозуміти, що найкращі роки пройшли десь між дедлайнами. <br/>Я не женуся за дорогими речами й не викладаю кожен свій крок у соціальні мережі заради схвалення. Життя напоказ — це не моя фішка.<br/>Мені набагато важливіше прожити момент, ніж отримати сотню чужих реакцій на нього. <br/>Мені важливо жити, а не демонструвати, як я живу.<br/>Проте якщо знаходиться однодумець, я завжди за спілкування. Мені цікаві люди, з якими можна обговорювати ідеї, мрії, технології, дивні задумки й нові можливості.<br/>Мабуть, саме такі розмови мені й потрібні — не заради кількості знайомств, а заради нових думок."
-    subtitle2: "Мені подобається розбиратися"
-    text2: "Я Юлія — веброзробниця, 3D-художниця та людина, якій постійно цікаво перевіряти: а що, якщо зробити інакше?<br/>Я закінчила Сумський державний університет та здобула ступінь спеціаліста за спеціальністю «Комп’ютерні науки та інформатика».<br/>Працювала з веброзробкою, дизайном, SEO та цифровими інструментами. Зараз розвиваюся в 3D, 3D-друці, анімації, штучному інтелекті та автоматизації.<br/>Мене не лякає технологія, якої я не знаю.<br/>Навпаки.<br/>Якщо я чогось не вмію — мені стає цікаво.<br/>Я люблю створювати.<br/>Сайт, який працює не так, як усі.<br/>3D-модель, яку можна не лише уявити, а й покрутити у 3D-середовищі.<br/>Фізичний продукт, якого ще ніхто не робив.<br/>Анімацію, історію, освітній проєкт, технологію.<br/>Можливо, одного дня — щось, для чого сьогодні ще навіть немає назви професії."    
-    subtitle3: "Мені не дуже підходять рамки"
-    text3: "Мені подобається стояти на межі між цифровим і реальним світом і дивитися, що можна з цього придумати.Саме тому я не дуже прагну до класичної роботи з 8 до 5.<br/>Не тому, що не люблю працювати.<br/>Коли мене щось захоплює, я можу працювати над цим до ночі. Але я не хочу вимірювати свою цінність кількістю годин, проведених перед комп’ютером.<br/>Творчість задихається там, де головним показником стає присутність на робочому місці.<br/>Мені потрібен простір думати, пробувати, помилятися, змінювати напрямок і знову починати.<br/>Мені потрібна свобода.<br/>І водночас мені потрібен час для людей, яких я люблю.<br/>Можливо, через якийсь час я працюватиму повний робочий день. Але це має бути проєкт, який мені справді цікавий. Бо працювати лише заради грошей — для мене прямий шлях до вигорання.<br/>Я не знаю, якою буде моя робота через десять років.<br/>І, чесно кажучи, не хочу знати.<br/>Бо мені подобається, що попереду ще багато невідомого."
-    subtitle4: "Що я можу для вас зробити"
-    text4: "Я можу допомогти перетворити ідею на щось реальне.<br/>Сайт, який не просто «є в інтернеті», а працює на вашу задачу. Продумати структуру, дизайн і подачу, зробити зрозумілим складне, додати потрібну функціональність і не залишити після себе хаос, який потім доведеться розгрібати.<br/>Можу підхопити проєкт там, де він застряг, розібратися з тим, що не працює, або разом придумати рішення, якого спочатку взагалі не було.<br/>Мені цікаві задачі, де потрібно думати, а не просто виконувати список інструкцій.<br/>Але є один нюанс.<br/>Я не ваша людина, якщо вам потрібен просто виконавець, який мовчки зробить «як сказали», поставить галочку й піде.<br/>Я ставитиму запитання. Можу не погодитися. Можу запропонувати інший варіант. І якщо бачу, що рішення можна зробити краще — скажу про це.<br/>Зате якщо вам потрібна людина, яка не боїться розібратися, придумати, спробувати нове й довести ідею до результату — можливо, нам по дорозі."
+    title: "WebAnd3D — 3D-моделювання, 3D-друк і веброзробка"
+    text1: "Привіт! Я Юля Карась — займаюся <strong>3D-моделюванням</strong>, <strong>створюю авторські вироби</strong> за допомогою 3D-друку та <strong>розробляю сайти для бізнесу</strong>. <br/> <strong>WebAnd3D</strong> — моя творча лабораторія, де цифрові ідеї перетворюються на фізичні вироби, а бізнес отримує власне місце в інтернеті."
+    subtitle2: "3D-моделювання та STL-файли для 3D-друку"
+    text2: "Розробляю власні тривимірні моделі для створення фізичних виробів. Це можуть бути декоративні предмети, органайзери, корисні деталі та інші об'єкти, які можна виготовити за допомогою 3D-принтера. <br/>На WebAnd3D ви зможете знайти авторські <strong>STL-файли для 3D-друку</strong>, використовувати цифрові моделі для власних проєктів і відкривати нові можливості адитивного виробництва. <br/>Мене цікавить не лише створення красивих об'єктів, а й пошук практичних рішень: як зробити річ зручною, функціональною та придатною для виготовлення на 3D-принтері."
+    subtitle3: "Оригінальні подарунки з 3D-друку"
+    text3: "Шукаєте незвичайний подарунок, якого немає в кожному магазині? <br/>Я створюю <strong>креативні подарунки</strong> з 3D-друку, <strong>декоративні вироби</strong> та <strong>корисні речі для дому</strong> й повсякденного використання. Можна обрати готовий виріб або обговорити індивідуальну ідею. <br/>Можливість персоналізації, доступні матеріали та терміни виготовлення залежать від конкретного виробу. <br/>Орієнтовний термін виготовлення готового подарунка — 1–3 дні. Складні індивідуальні замовлення можуть потребувати більше часу."
+    subtitle4: "Розробка сайтів для малого бізнесу"
+    text4: "Власний сайт допомагає бізнесу презентувати свої послуги, показувати роботи, розповідати про продукти та знаходити нових клієнтів. <br/> Я допомагаю малому бізнесу й фахівцям створювати сайти, які відповідають їхнім завданням і стилю бренду. Основні напрямки веброзробки:<br/> <strong>Розробка лендінгів</strong>. Односторінкові сайти для презентації послуг, товарів, рекламних кампаній або окремих пропозицій.<br/> <strong>Корпоративні сайти</strong>. Багатосторінкові сайти для компаній, які хочуть представити свій бізнес, послуги та контакти в інтернеті.<br/> <strong>Сайти-портфоліо</strong>. Презентація робіт, досвіду й професійних навичок для фахівців, дизайнерів, розробників та інших творчих професій. <br/>Під час розробки я приділяю увагу структурі сторінок, адаптації для мобільних пристроїв, швидкості завантаження та базовій SEO-оптимізації. Мета — створити зрозумілий і впізнаваний сайт, який допомагатиме досягати цілей бізнесу."
+    subtitle5: "Терміни розробки та виготовлення"
+    text5: "Терміни залежать від складності проєкту, обсягу робіт і готовності матеріалів. 3D-друковані подарунки: орієнтовно 1–3 дні для готових моделей. Лендінг: орієнтовно 3–10 днів залежно від складності, обсягу робіт і поточного завантаження. Корпоративні сайти та портфоліо: індивідуальний термін залежно від кількості сторінок і необхідного функціоналу. STL-файли: цифрові моделі доступні відповідно до умов, зазначених на сторінці кожного файлу."
+    subtitle6: "WebAnd3D — від цифрової моделі до готового результату"
+    text6: "WebAnd3D об'єднує 3D-моделювання, авторські вироби з 3D-друку та веброзробку. Тут можна знайти цифрові моделі для власних проєктів, обрати оригінальний подарунок або замовити сайт для бізнесу. Маєте ідею виробу або шукаєте розробника для свого сайту? Зв'яжіться зі мною через сторінку контактів, щоб обговорити завдання, терміни та вартість."
     quote: "Я не хочу знайти своє місце у світі. Я хочу створити своє."
   contact:
     first-name: "Ім'я:"
@@ -59,8 +62,8 @@ ua:
     subtitle: "Маєш запитання чи пропозицію? Заповни форму нижче — я з радістю відповім."
   seo:
     about:
-      title: "Про мене – Юлія Карась | 3D Художниця"
-      description: "Дізнайтесь більше про Юлію Карась – 3D художницю, яка поєднує архітектурне моделювання з творчими CGI-проєктами. Відповідальна, надійна, відкрита до співпраці."
+      title: "WebAnd3D — 3D-моделювання, подарунки та розробка сайтів"
+      description: "WebAnd3D — авторські 3D-моделі, STL-файли, оригінальні подарунки з 3D-друку та розробка сайтів для малого бізнесу: лендінги, корпоративні сайти й портфоліо."
     contact:
       title: "Контакти – Зв'язок із Юлією Карась | 3D Портфоліо"
       description: "Бажаєте співпрацювати або поставити запитання? Звʼяжіться з Юлією Карась через форму або соціальні мережі."
@@ -68,11 +71,11 @@ ua:
       title: "Галерея – Юлія Карась | 3D Моделі та Візуальні Проєкти"
       description: "Перегляньте галерею 3D моделей Юлії Карась: реалістичні об'єкти, стилізовані ассети, архітектурні сцени та креативні концепції."
     thank:
-      title: "Дякую – Портфоліо Юлії Карась"
+      title: "Дякую – WebAnd3D"
       description: "Дякую за звернення! Я відповім Вам якнайшвидше. Створімо щось круте разом!"
     error:
-      title: "404 – Сторінку не знайдено | Портфоліо Юлії Карась"
-      description: "Ой! Сторінку не знайдено. Поверніться на головну або перегляньте роботи Юлії Карась."
+      title: "404 – Сторінку не знайдено | WebAnd3D"
+      description: "Ой! Сторінку не знайдено. Поверніться на головну або перегляньте роботи WebAnd3D."
     services:
       title1: "START"
       h31: "Від 6 000 грн"
@@ -163,15 +166,18 @@ en:
     cgi: "CGI / Motion"
     textures: "Models with PBR Textures"
   aboutme:
-    title: "About Me"
-    subtitle1: "Life is not a straight road"
-    text1: "I love movement. You don't always need to know where it's going to take you. Sometimes the most interesting thing is simply to take a different road and see what happens next.<br/>My passion is speed, motorcycles, and roads without a fixed destination. Discovering beautiful new places, feeling the wind, the freedom, and that moment when you're simply riding without knowing what's waiting around the next corner.<br/>I love a hot sauna and an ice-cold plunge — those moments when you can finally switch your mind off and feel your body again. I love moments when there is nowhere to rush to.<br/>And I love my family. They are probably the most precious thing I have.<br/>I'm a mother of three girls, so the time I spend with them truly matters to me. I don't want to look back one day and realize that the best years of my life disappeared somewhere between deadlines.<br/>I don't chase expensive things, and I don't post every step of my life on social media just for approval. Living my life for show isn't my thing.<br/>I'd rather actually experience a moment than collect a hundred reactions to it.<br/>I care more about living than demonstrating how I live.<br/>That said, if I meet a like-minded person, I'm always open to a good conversation. I enjoy people who are interested in ideas, dreams, technology, strange little projects, and new possibilities.<br/>Maybe that's the kind of connection I value most — not collecting contacts, but exchanging thoughts."
-    subtitle2: "I like figuring things out"
-    text2: "I'm Yuliia — a web developer, 3D artist, and a person who is constantly asking: what if I did it differently?<br/>I graduated from Sumy State University with a Specialist degree in Computer Science and Informatics.<br/>I've worked with web development, design, SEO, and digital tools. These days, I'm exploring 3D, 3D printing, animation, artificial intelligence, and automation.<br/>Technology I don't know doesn't scare me.<br/>Quite the opposite.<br/>If I don't know how to do something, I get curious.<br/>I love creating.<br/>A website that doesn't work like every other website.<br/>A 3D model that you can not only imagine, but actually explore and turn around in a 3D environment.<br/>A physical product that didn't exist before.<br/>An animation. A story. An educational project. A technology.<br/>Maybe one day, something that doesn't even have a job title yet."
-    subtitle3: "I don't fit very well into boxes"
-    text3: "I like standing somewhere between the digital and physical worlds and seeing what can be created there.<br/>That's also why I'm not particularly drawn to the traditional 9-to-5 job.<br/>Not because I don't like working.<br/>When something really grabs me, I can work on it until late at night. But I don't want my value to be measured by the number of hours I spend sitting in front of a computer.<br/>Creativity suffocates when being present at the workplace becomes more important than what you actually create.<br/>I need space to think, experiment, fail, change direction, and start again.<br/>I need freedom.<br/>And at the same time, I need time for the people I love.<br/>Maybe someday I'll work full-time. But it has to be a project I genuinely care about. Because working only for money, for me, is a straight road to burnout.<br/>I don't know what my work will look like ten years from now.<br/>And honestly, I don't want to know.<br/>I like the fact that there is still so much unknown ahead."
-    subtitle4: "What Can I Do for You?"
-    text4: "I can help turn an idea into something real.<br/>A website that doesn't just exist on the internet, but actually serves a purpose. I can help with the structure, design, and presentation, make complicated things easier to understand, add the functionality you actually need, and leave you with something you can work with — not a mess you'll have to untangle later.<br/>I can join a project where it's already stuck, figure out what's not working, or help come up with a solution that didn't exist in the first place.<br/>I'm interested in tasks that require thinking, not just following a checklist.<br/>But there's one thing you should know.<br/>I'm not your person if you need someone who will silently do exactly what you say, tick the box, and leave.<br/>I will ask questions. I may disagree. I may suggest a different approach. And if I see a way to make something better, I'll tell you.<br/>But if you need someone who isn't afraid to figure things out, come up with ideas, try something new, and actually get it done — we might be a good match."
+    title: "WebAnd3D — 3D Modeling, 3D Printing & Web Development"
+    text1: "Hi! I'm Yuliia Karas. I create <strong>3D models</strong>, <strong>design original products</strong> using 3D printing, and <strong>build websites for businesses</strong>.<br/><strong>WebAnd3D</strong> is my creative lab, where digital ideas become physical products and businesses get their own place on the web."
+    subtitle2: "3D Modeling and STL Files for 3D Printing"
+    text2: "I design original 3D models for physical products, from decorative objects and organizers to functional parts and other items that can be manufactured using a 3D printer.<br/> At WebAnd3D, you can explore original <strong>STL files</strong> for 3D printing, use digital models in your own projects, and discover new possibilities for additive manufacturing. <br/> I'm interested not only in creating visually appealing objects but also in finding practical solutions — making products useful, functional, and suitable for 3D printing."
+    subtitle3: "Creative 3D Printed Gifts"
+    text3: "Looking for a unique gift that you won't find in every store?<br/> I create <strong>creative 3D printed gifts</strong>, <strong>decorative objects</strong>, and <strong>practical accessories for the home</strong> and everyday life.<br/> You can choose a ready-made product or discuss a custom idea with me. Personalization options, available materials, and production times depend on the specific design. <br/>The estimated production time for ready-made gift designs is 1–3 days. Custom or more complex orders may take longer."
+    subtitle4: "Website Development for Small Businesses"
+    text4: "A website helps a business showcase its services, present its work, explain its products, and reach new customers. I help <strong>small businesses</strong> and independent professionals <strong>build websites</strong> that fit their goals and brand identity.<br/><br/>My <strong>web development services</strong> include:<br/> <strong>Landing page development</strong>. Single-page websites for presenting services, products, campaigns, or specific offers.<br/><strong>Business website development</strong>. Multi-page websites that introduce a company, explain its services, and provide essential business information. <br/><strong>Portfolio websites</strong>. Websites that showcase projects, experience, and professional skills for developers, designers, and other creative professionals. <br/><br/> My development process focuses on clear page structure, mobile responsiveness, loading speed, and basic SEO optimization. <br/>The goal is to create a recognizable, user-friendly website that supports your business objectives."
+    subtitle5: "Production and Development Timeframes"
+    text5: "Project timelines depend on complexity, scope, and the availability of the required content and materials.<br/><strong>3D printed gifts</strong>: approximately 1–3 days for ready-made designs. <br/><strong>Landing pages</strong>: approximately 3–10 days, depending on complexity, workload, and project requirements.<br/><strong>Business websites</strong> and portfolios: timelines are determined individually based on the number of pages and required functionality.<br/><strong>STL files</strong>: digital models are available according to the terms specified on each file's page."
+    subtitle6: "WebAnd3D — From Digital Models to Real-World Results"
+    text6: "<strong>WebAnd3D</strong> brings together <strong>3D modeling</strong>, <strong>original 3D printed products</strong>, and <strong>web development</strong>. <br/>Explore <strong>digital models</strong> for your own projects, find a <strong>creative gift</strong>, or commission <strong>a website for business</strong>.<br/> Have a product idea or need a website for your business? <br/>Get in touch through my contact page to discuss your project, timeline, and pricing."
     quote: "I don't want to find my place in the world. I want to create my own."
   contact:
     first-name: "Name:"
@@ -185,8 +191,8 @@ en:
     subtitle: "Have a question or proposal? Fill out the form below and I'll get back to you soon."
   seo:
     about:
-      title: "About – Yuliia Karas | 3D Artist"
-      description: "Learn more about Yuliia Karas – a 3D artist combining architecture and creative CGI projects. Dedicated, reliable, and open to collaboration."
+      title: "WebAnd3D — 3D Modeling, 3D Printed Gifts & Web Development"
+      description: "Discover custom 3D models, STL files, creative 3D printed gifts, and website development for small businesses. Explore landing pages, business websites, and portfolios."
     contact:
       title: "Contact – Reach Out to Yuliia Karas | 3D Portfolio"
       description: "Want to work together or ask a question? Get in touch with Yuliia Karas through the contact form or social media."
@@ -194,11 +200,11 @@ en:
       title: "Gallery – Yuliia Karas | 3D Models & Visual Projects"
       description: "Explore Yuliia Karas' 3D modeling gallery: realistic objects, stylized assets, architectural scenes, and creative concepts."
     thank:
-      title: "Thank You – Yuliia Karas Portfolio"
+      title: "Thank You – WebAnd3D"
       description: "Thanks for reaching out! I will respond as soon as possible. Let's build something amazing together!"
     error:
-      title: "404 – Page Not Found | Yuliia Karas Portfolio"
-      description: "Oops! The page you're looking for doesn't exist. Go back to the homepage or explore Yuliia Karas' 3D works."
+      title: "404 – Page Not Found | WebAnd3D"
+      description: "Oops! The page you're looking for doesn't exist. Go back to the homepage or explore WebAnd3D 3D works."
     services:
       title1: "START"
       h31: "From €250"
