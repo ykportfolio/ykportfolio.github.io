@@ -27,6 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>
     {% case page.slug %}
       {% when "about" %}{{ t.seo.about.title }}
+      {% when "models" %}{{ t.seo.models.title }}
       {% when "gallery" %}{{ t.seo.gallery.title }}
       {% when "contact" %}{{ t.seo.contact.title }}
       {% else %}{{ t.title }}
@@ -34,6 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </title>
   <meta name="description" content="{% case page.slug %}
     {% when 'about' %}{{ t.seo.about.description }}
+    {% when 'models' %}{{ t.seo.models.description }}
     {% when 'gallery' %}{{ t.seo.gallery.description }}
     {% when 'contact' %}{{ t.seo.contact.description }}
     {% else %}{{ t.description }}

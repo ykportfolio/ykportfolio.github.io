@@ -1,6 +1,7 @@
 title: "YK Portfolio"
 url: "https://weband3d.com"
 baseurl: "" # якщо сайт у корені репозиторію; якщо в папці — вкажи /назва-репозиторію
+stl_url: "http://files.weband3d.com/"
 
 plugins:
   - jekyll-datapage-generator
@@ -20,6 +21,25 @@ datapage_gen:
     name: name
     dir: "ua/gallery"
     extension: "html"
+    lang: ua
+
+page_gen:
+  - data: stl-models
+    template: model-project
+    name: name
+    dir: "models/automotive-parts"
+    extension: "html"
+    index_files: true
+    filter_condition: "record['category_id'] == 'automotive-parts'"
+    lang: en
+
+  - data: stl-models
+    template: model-project
+    name: name
+    dir: "ua/models/automotive-parts"
+    extension: "html"
+    index_files: true
+    filter_condition: "record['category_id'] == 'automotive-parts'"
     lang: ua
 
 jekyll-minifier:

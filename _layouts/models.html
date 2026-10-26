@@ -1,0 +1,66 @@
+{% assign t = site.data.us_ua[page.lang] %}
+{% assign lang = page.lang | default: "en" %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+{% include head.html %}
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  {% include header.html %}
+
+  <div class="gallery-page">
+    <div class="gallery-blocks">
+
+  {% assign stl_categories = site.data.stl-models | map: "category_id" | uniq %}
+
+  {% for category_id in stl_categories %}
+    {% assign category_models = site.data.stl-models | where: "category_id", category_id %}
+    {% assign first_model = category_models | first %}
+
+    {% if lang == "ua" %}
+      {% assign category_title = first_model.title_category_ua %}
+      {% assign category_description = first_model.description_category_ua %}
+      {% assign content = first_model.ua %}
+    {% else %}
+      {% assign category_title = first_model.title_category %}
+      {% assign category_description = first_model.description_category %}
+      {% assign content = first_model.en %}
+    {% endif %}
+
+    
+
+    <a class="gallery-block" href="{% if lang == 'ua' %}/ua/models/{{ category_id }}//{% else %}/models/{{ category_id }}/{% endif %}">
+
+
+      <img src="/assets/img/models/{{ category_id }}/{{ first_model.name }}/thumbnails/{{ first_model.images[0] }}"
+  alt="{{ content.alt[0] | default: content.title | escape }}"
+  loading="lazy">
+
+      <h2>{{ category_title }}</h2>
+
+      {% if category_description != "" %}
+        <p>{{ category_description }}</p>
+      {% endif %}
+
+    </a>
+  {% endfor %}
+
+</div>
+
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>

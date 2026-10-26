@@ -8,6 +8,9 @@
       <a href="{% if page.lang == 'en'%}/about/{% else %}/ua/about/{% endif %}" class="{% if page.url == '/about/' or page.url == '/ua/about/' %}active{% endif %}">{{ t.nav.about }}</a>
     </li>
     <li>
+      <a href="{% if page.lang == 'en'%}/models/{% else %}/ua/models/{% endif %}" class="{% if page.url == '/models/' or page.url == '/ua/models/' %}active{% endif %}">{{ t.nav.models }}</a>
+    </li>
+    <li>
       <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="{% if page.url == '/gallery/' or page.url == '/ua/gallery/' %}active{% endif %}">{{ t.nav.gallery }}</a>
     </li>
     <li>

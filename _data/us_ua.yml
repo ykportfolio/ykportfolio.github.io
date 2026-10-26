@@ -13,6 +13,7 @@ ua:
   contacts: "Зв'язатися зі мною"
   nav:
     about: "Про нас"
+    models: "STL-моделі"
     gallery: "Галерея"
     services: "Веб послуги"
     blog: "Блог"
@@ -67,8 +68,11 @@ ua:
     contact:
       title: "Контакти – Зв'язок із Юлією Карась | 3D Портфоліо"
       description: "Бажаєте співпрацювати або поставити запитання? Звʼяжіться з Юлією Карась через форму або соціальні мережі."
+    models:
+      title: "Безкоштовні STL-моделі для 3D-друку – WebAnd3D"
+      description: "Переглядайте та завантажуйте безкоштовні STL-моделі для 3D-друку: корисні деталі, практичні аксесуари та оригінальні вироби від WebAnd3D."
     gallery:
-      title: "Галерея – Юлія Карась | 3D Моделі та Візуальні Проєкти"
+      title: "Галерея – WebAnd3D | 3D Моделі та Візуальні Проєкти"
       description: "Перегляньте галерею 3D моделей Юлії Карась: реалістичні об'єкти, стилізовані ассети, архітектурні сцени та креативні концепції."
     thank:
       title: "Дякую – WebAnd3D"
@@ -142,6 +146,7 @@ en:
   contacts: "Contact me"
   nav:
     about: "About"
+    models: "STL-models free"
     gallery: "Gallery"
     services: "Web services"
     blog: "Blog"
@@ -196,8 +201,11 @@ en:
     contact:
       title: "Contact – Reach Out to Yuliia Karas | 3D Portfolio"
       description: "Want to work together or ask a question? Get in touch with Yuliia Karas through the contact form or social media."
+    models:
+      title: "Free 3D Models for 3D Printing – WebAnd3D"
+      description: "Explore and download free STL files for 3D printing, including practical accessories, useful parts, and creative designs by WebAnd3D."
     gallery:
-      title: "Gallery – Yuliia Karas | 3D Models & Visual Projects"
+      title: "Gallery – WebAnd3D | 3D Models & Visual Projects"
       description: "Explore Yuliia Karas' 3D modeling gallery: realistic objects, stylized assets, architectural scenes, and creative concepts."
     thank:
       title: "Thank You – WebAnd3D"

@@ -1,0 +1,293 @@
+{% assign lang = page.lang | default: "en" %}
+{% if page.url contains "/ua/" %}
+  {% assign lang = "ua" %}
+{% endif %}
+{% assign t = site.data.us_ua[lang] %}
+{% assign path_parts = page.url | split: "/" %}
+{% assign model_name = path_parts[4] | default: path_parts[3] %}
+{% assign model = site.data.stl-models | where: "name", model_name | first %}
+{% assign content = model[lang] %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  
+
+  <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZVQNV9D');</script>
+<!-- End Google Tag Manager -->
+ <!-- Google tag (gtag.js) --> 
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-72NNEVRC7J"></script> 
+   <script> window.dataLayer = window.dataLayer || []; 
+   function gtag(){
+    dataLayer.push(arguments);
+   } 
+   gtag('js', new Date()); 
+   gtag('config', 'G-72NNEVRC7J'); 
+   </script>
+   <!-- End Google tag (gtag.js)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+  <title>{{ content.title }}</title>
+  <meta name="description" content="{{ content.description }}">
+  
+  {% if page.lang == "ua" %}
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/ua' }}" />
+  {% elsif page.lang == "en" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}/ua{{ page.url }}" />
+  {% endif %}
+ 
+  {% if page.url == "/" and page.lang == "en" %}
+    <link rel="alternate" hreflang="uk" href="{{ site.url }}{{ site.baseurl }}/ua/" />
+  {% elsif page.url == "/ua/" and page.lang == "ua" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/" />
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</head>
+    
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+
+<header>
+  <div class="header-wrapper">
+    <div class="logo">
+      <a href="/" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+        <picture>
+            <source 
+            media="(max-width: 768px)" 
+            srcset="
+              /assets/img/Logo-small.webp?v=8"
+          >
+
+          <img 
+            src="/assets/img/Logo.webp?v=8"
+            alt="WEBand3D digital lab logo"
+            width="120"
+            height="60"
+          >
+        </picture>
+        
+      </a>
+    </div>
+
+    <nav>
+  <div class="burger">
+    <img src="/assets/img/burger.svg" alt="Menu" />
+  </div>
+
+  <ul class="nav-links">
+    <li>
+      <a href="{% if page.lang == 'en'%}/about/{% else %}/ua/about/{% endif %}" class="{% if page.url == '/about/' or page.url == '/ua/about/' %}active{% endif %}">{{ t.nav.about }}</a>
+    </li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/models/{% else %}/ua/models/{% endif %}" class="{% if page.url == '/models/' or page.url == '/ua/models/' %}active{% endif %}">{{ t.nav.models }}</a>
+    </li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/gallery/{% else %}/ua/gallery/{% endif %}" class="{% if page.url == '/gallery/' or page.url == '/ua/gallery/' %}active{% endif %}">{{ t.nav.gallery }}</a>
+    </li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/services/{% else %}/ua/services/{% endif %}" class="{% if page.url == '/services/' or page.url == '/ua/services/' %}active{% endif %}">{{ t.nav.services }}</a>
+    </li>
+    <li>
+  <a href="{% if page.lang == 'en' %}/blog/{% else %}/ua/blog/{% endif %}"
+     class="{% if page.url == '/blog/' or page.url == '/ua/blog/' %}active{% endif %}">
+    {{ t.nav.blog }}
+  </a>
+</li>
+    <li>
+      <a href="{% if page.lang == 'en'%}/contact/{% else %}/ua/contact/{% endif %}" class="{% if page.url == '/contact/' or page.url == '/ua/contact/' %}active{% endif %}">{{ t.nav.contact }}</a>
+    </li>
+
+    
+<li class="nav-item lang-switch">
+
+{% if page.article_id %}
+
+    {% if page.lang == "ua" %}
+
+        {% assign translated = site.blog
+            | where:"article_id", page.article_id
+            | where:"lang", "en"
+            | first %}
+
+        {% if translated %}
+            <a href="{{ translated.url }}" class="btn-lang">EN</a>
+        {% endif %}
+
+    {% else %}
+
+        {% assign translated = site.blog
+            | where:"article_id", page.article_id
+            | where:"lang", "ua"
+            | first %}
+
+        {% if translated %}
+            <a href="{{ translated.url }}" class="btn-lang">UA</a>
+        {% endif %}
+
+    {% endif %}
+
+{% else %}
+
+    
+{% if lang == "ua" %}
+    {% assign switch_url = page.url | remove_first: "/ua" %}
+    <a href="{{ switch_url }}" class="btn-lang">EN</a>
+{% else %}
+    <a href="/ua{{ page.url }}" class="btn-lang">UA</a>
+{% endif %}
+
+{% endif %}
+
+</li>
+
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+
+
+
+
+
+  <div class="project-page">
+    <div class="project-overlay">
+
+      {% if model %}
+        <h1>{{ content.title | escape }}</h1>
+        <p class="description">{{ content.description | escape }}</p>
+
+        {% if content.tags %}
+          <div class="tags">
+            {% for tag in content.tags %}
+              <span class="tag">{{ tag | escape }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <div class="image-gallery">
+          {% for image in model.images %}
+            {% assign file_url = model.en.download_url[forloop.index0] %}
+            {% assign image_alt = content.alt[forloop.index0] %}
+            {% assign image_description = content.description_img[forloop.index0] %}
+
+            <div class="gallery-item">
+              <img
+                src="/assets/img/models/{{ model.category_id }}/{{ model.name }}/full/{{ image | escape }}"
+                alt="{{ image_alt | default: content.title | escape }}"
+                loading="lazy">
+
+              {% if image_description %}
+                <p class="description">
+                  {{ image_description | escape }}
+                </p>
+              {% endif %}
+
+              {% if file_url %}
+                <a
+                  href="{{ site.stl_url }}{{ file_url | uri_escape }}"
+                  class="btn btn-primary js-stl-download"
+                  data-model="{{ model.name | escape }}"
+                  data-file="{{ file_url | escape }}"
+                  data-lang="{{ lang }}"
+                  download>
+                  {% if lang == "ua" %}
+                    Завантажити STL
+                  {% else %}
+                    Download STL
+                  {% endif %}
+                </a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+
+        <section class="print-recommendations"></section>
+
+        <div class="project-navigation">
+          <a
+            href="{% if lang == 'ua' %}/ua/models/{% else %}/models/{% endif %}"
+            class="btn btn-primary">
+            {% if lang == "ua" %}
+              ← До категорій моделей
+            {% else %}
+              ← Back to Model Categories
+            {% endif %}
+          </a>
+
+          <a
+            href="{% if lang == 'ua' %}/ua/models/{{ model.category_id }}/{% else %}/models/{{ model.category_id }}/{% endif %}"
+            class="btn btn-primary">
+            {% if lang == "ua" %}
+              ← До категорії
+            {% else %}
+              ← Back to Category
+            {% endif %}
+          </a>
+        </div>
+
+      {% else %}
+        <h1>
+          {% if lang == "ua" %}
+            Модель не знайдено
+          {% else %}
+            Model not found
+          {% endif %}
+        </h1>
+      {% endif %}
+
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+  <script>
+    document.addEventListener("click", function (event) {
+      const link = event.target.closest(".js-stl-download");
+
+      if (!link) return;
+
+      // Якщо GA4 не завантажився, не блокуємо завантаження файлу.
+      if (typeof gtag !== "function") return;
+
+      event.preventDefault();
+
+      const url = link.href;
+
+      gtag("event", "stl_download", {
+        model_name: link.dataset.model,
+        file_name: link.dataset.file,
+        language: link.dataset.lang,
+        transport_type: "beacon",
+        event_callback: function () {
+          window.location.href = url;
+        },
+        event_timeout: 2000
+      });
+
+      // Резервний перехід, якщо callback GA4 не спрацює.
+      window.setTimeout(function () {
+        if (document.visibilityState === "visible") {
+          window.location.href = url;
+        }
+      }, 2200);
+    });
+  </script>
+</body>
+</html>

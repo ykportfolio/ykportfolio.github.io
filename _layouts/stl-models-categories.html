@@ -1,0 +1,80 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign category_id = page.category_id %}
+{% assign stl_models = site.data.stl-models | where: "category_id", category_id %}
+{% assign first_stl_model = stl_models | first %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {% include head.html %}
+  <title>
+    {% if lang == "ua" %}
+      {{ first_stl_model.title_category_ua | default: page.title }}
+    {% else %}
+      {{ first_stl_model.title_category | default: page.title }}
+    {% endif %}
+  </title>
+  <meta name="description" content="{% if lang == 'ua' %}{{ first_stl_model.description_category_ua | default: page.knowledge | strip_html | strip_newlines | escape }}{% else %}{{ first_stl_model.description_category | default: page.knowledge | strip_html | strip_newlines | escape }}{% endif %}">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WZVQNV9D"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  {% include header.html %}
+
+  <main class="category-page">
+    <div class="category-overlay">
+
+      {% if lang == "ua" %}
+        <h1>{{ first_stl_model.title_category_ua | default: page.title }}</h1>
+        <p class="description">
+          {{ first_stl_model.description_category_ua | default: page.knowledge }}
+        </p>
+      {% else %}
+        <h1>{{ first_stl_model.title_category | default: page.title }}</h1>
+        <p class="description">
+          {{ first_stl_model.description_category | default: page.knowledge }}
+        </p>
+      {% endif %}
+
+      <div class="image-gallery">
+  {% for stl_model in stl_models %}
+    {% assign content = stl_model[lang] %}
+
+    <a href="{% if lang == 'ua' %}/ua/models/{{ stl_model.category_id }}/{{ stl_model.name }}/{% else %}/models/{{ stl_model.category_id }}/{{ stl_model.name }}/{% endif %}">
+      <img
+        src="/assets/img/models/{{ stl_model.category_id }}/{{ stl_model.name }}/middle/{{ stl_model.images[0] }}"
+        alt="{{ content.alt[0] | default: content.title | escape }}"
+        loading="lazy">
+
+      <p class="description">{{ content.title }}</p>
+    </a>
+  {% endfor %}
+</div>
+
+      <a
+        href="{% if lang == 'ua' %}/ua/models/{% else %}/models/{% endif %}"
+        class="btn btn-primary">
+        {% if lang == "ua" %}
+          ← Назад до моделей
+        {% else %}
+          ← Back to Models
+        {% endif %}
+      </a>
+
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

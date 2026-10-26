@@ -1,0 +1,34 @@
+- name: chery-tiggo
+  category_id: automotive-parts
+  category: automotive-parts
+  title_category: "Automotive Parts & Accessories"
+  description_category: "Download free STL-models for 3D-printing"
+  title_category_ua: "Автодеталі та аксесуари"
+  description_category_ua: "Завантажуйте безкоштовні моделі для 3D-друку"
+  images:
+    - title-img_1_0.webp
+    - title-img_1_1.webp
+  en:
+    title: "Chery Tiggo T11 Armrest Hinge"
+    description: "Chery Tiggo T11 Armrest Hinge | 3D Model"
+    description_img: 
+      - "Chery Tiggo T11 Armrest Hinge Left"
+      - "Chery Tiggo T11 Armrest Hinge Right"
+    download_url: 
+      - "CheryTiggoArmrestHingeLeft.stl"
+      - "CheryTiggoArmrestHingeRight.stl"
+    tags: ["Chery Tiggo", "Automotive Part", "Compatible"]
+    alt:
+      - "Chery Tiggo T11 Armrest Hinge - Left"
+      - "Chery Tiggo T11 Armrest Hinge - Right"
+  ua:
+    title: "Петля підлокітника на Chery Tiggo T11"
+    description: "Петля підлокітника на Chery Tiggo T11 | 3D модель"
+    description_img: 
+      - "Петля підлокітника на Chery Tiggo T11 - ліва"
+      - "Петля підлокітника на Chery Tiggo T11 - права"
+    tags: ["Чері тіго", "Чері тіго T11", "Автомобільна деталь", "Сумісна деталь"]
+    alt:
+      - "Петля підлокітника на Chery Tiggo T11 - ліва"
+      - "Петля підлокітника на Chery Tiggo T11 - права"
+

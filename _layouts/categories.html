@@ -1,6 +1,6 @@
 {% assign lang = page.lang | default: "en" %}
 {% assign category = page.category_id %}
-{% assign projects = site.data.projects | where: "category", category %}
+{% assign projects = site.data.projects | where: "category_id", category %}
 {% assign first_project = projects | first %}
 
 <!DOCTYPE html>

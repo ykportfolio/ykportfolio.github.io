@@ -488,6 +488,7 @@ footer .social-icons a:hover {
 }
 
 .btn {
+  margin: 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1520,9 +1521,10 @@ footer .social-icons a:hover {
 
 .gallery-page{
   min-height: 80vh;
-  background-image: url('/assets/img/background7.jpg'); 
-  background-size: cover;
-  background-position: center;
+  //background-image: url('/assets/img/background7.jpg'); 
+  //background-size: cover;
+  //background-position: center;
+  background-color: #050b10;
   display: flex;
   flex-direction: column;
   justify-content: center;
