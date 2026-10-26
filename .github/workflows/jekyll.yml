@@ -38,6 +38,7 @@ jobs:
             exit 1
           fi
           echo "Chery Tiggo page generated successfully"
+          
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
